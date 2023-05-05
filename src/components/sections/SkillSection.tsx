@@ -1,5 +1,7 @@
 import React from 'react';
 import Underline from '../gasp/UnderLine';
+import ScrollTriggerFadeIn from '../gasp/ScrollTriggerFadeIn';
+import TopToBottomFadeIn from '../gasp/TopToBottomFadeIn';
 
 export default function SkillSection() {
   return (
@@ -13,6 +15,16 @@ export default function SkillSection() {
         >
           <p>잘되나 보자</p>
         </Underline>
+      </div>
+      <div>
+        <ScrollTriggerFadeIn delay={0.5}>
+          <div>faenfilaenfliefnlaif3212312</div>
+        </ScrollTriggerFadeIn>
+      </div>
+      <div>
+        <TopToBottomFadeIn delay={0.5}>
+          <div>3142412312312313</div>
+        </TopToBottomFadeIn>
       </div>
     </section>
   );

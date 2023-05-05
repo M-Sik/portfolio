@@ -14,14 +14,15 @@ export default function ScrollTriggerFadeIn({ children, delay, className }: Prop
   const target = useRef(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    // console.log(target.current);
 
     gsap.from(target.current, {
       scrollTrigger: {
         trigger: target.current,
-        toggleActions: 'restart  none none reverse',
-        // start: 'top bottom',
-        // end: 'bottom 20%',
-        scrub: false,
+        toggleActions: 'restart none none reverse',
+        start: 'top 100%',
+        end: 'bottom 20%',
+        // scrub: false,
       },
       opacity: 0,
       delay,

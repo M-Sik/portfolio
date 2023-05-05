@@ -17,7 +17,7 @@ export default function TopToBottomFadeIn({ children, delay, className = '' }: P
     gsap.from(target.current, {
       scrollTrigger: {
         trigger: target.current,
-        toggleActions: 'play none none none',
+        toggleActions: 'restart none none none',
       },
       y: -100,
       opacity: 0,
