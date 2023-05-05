@@ -10,22 +10,20 @@ type Props = {
   className?: string;
 };
 
-export default function ScrollTriggerFadeIn({ children, delay, className }: Props) {
+export default function TopToBottomFadeIn({ children, delay, className = '' }: Props) {
   const target = useRef(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
     gsap.from(target.current, {
       scrollTrigger: {
         trigger: target.current,
-        toggleActions: 'restart  none none reverse',
-        // start: 'top bottom',
-        // end: 'bottom 20%',
-        scrub: false,
+        toggleActions: 'play none none none',
       },
+      y: -100,
       opacity: 0,
       delay,
-      duration: 1.5,
+      duration: 2.0,
+      ease: 'power3.out',
     });
   }, [delay]);
   return (
