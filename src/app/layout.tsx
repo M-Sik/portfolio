@@ -1,10 +1,7 @@
 import './globals.css';
 import { Open_Sans } from 'next/font/google';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 const openSans = Open_Sans({ subsets: ['latin'] });
-gsap.registerPlugin(ScrollTrigger);
 
 export const metadata = {
   title: {
