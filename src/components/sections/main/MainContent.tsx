@@ -9,14 +9,14 @@ export default function MainContent() {
     <article className="w-full h-full flex flex-col justify-center items-center relative">
       <p className={`${bigSizeFont} mb-6`}>게임을 즐기는 프론트엔드 개발자</p>
       <p className={`${bigSizeFont}`}>
-        <span className={`text-7xl ${styles.name_border}`}>김명식</span>
+        <span className={`text-7xl mobile:text-4xl ${styles.name_border}`}>김명식</span>
         입니다.
       </p>
       <p className={`${smailSizeFont} mt-6`}>프로그래밍이라는 게임을 즐기며</p>
       <p className={`${smailSizeFont} mt-1`}>열심히 레벨업 하고있습니다.</p>
       <p className={`${smailSizeFont} mt-1`}>매일 2시간 이상 게임을 즐기고있습니다.</p>
       <ArrowBottoIcon animation />
-      <div className=" w-full fixed top-0 left-[220px] z-[-1]">
+      <div className=" w-full fixed top-0 lg:left-[220px] z-[-1]">
         <Image
           src={bgImg}
           alt="메인 배경 이미지"
@@ -30,5 +30,5 @@ export default function MainContent() {
   );
 }
 
-const bigSizeFont = 'font-bold text-white text-5xl';
-const smailSizeFont = 'text-white text-3xl';
+const bigSizeFont = 'font-bold text-white text-5xl mobile:text-2xl';
+const smailSizeFont = 'text-white text-3xl mobile:text-lg';

@@ -9,7 +9,8 @@ export default function ArrowBottoIcon({ animation = false }: Props) {
   return (
     <BsArrowDownCircle
       color="white"
-      className={`text-4xl mt-32 ${animation && 'animate-c-bounce'}`}
+      // mt-32
+      className={`text-4xl ${animation && 'animate-c-bounce'} absolute bottom-[10vh]`}
     >
       ArrowBottoIcon
     </BsArrowDownCircle>

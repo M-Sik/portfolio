@@ -7,6 +7,10 @@ export default function Home() {
     <section>
       <MainSection />
       <SkillSection />
+      <SkillSection />
+      <MainSection />
+      <SkillSection />
+      <SkillSection />
     </section>
   );
 }
