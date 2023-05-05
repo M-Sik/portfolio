@@ -14,6 +14,9 @@ module.exports = {
       animation: {
         'c-bounce': '0.7s ease 0s infinite normal none running bounce',
       },
+      screens: {
+        mobile: { max: '1023px' },
+      },
     },
   },
   plugins: [],
