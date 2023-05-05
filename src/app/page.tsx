@@ -1,10 +1,12 @@
+import MainSection from '@/components/sections/main/MainSection';
+import SkillSection from '@/components/sections/SkillSection';
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <section>
-      <aside>faef</aside>
-      <article>1111</article>
+      <MainSection />
+      <SkillSection />
     </section>
   );
 }

@@ -8,19 +8,35 @@ export const metadata = {
     default: '김명식 포트폴리오',
     template: '김명식 포트폴리오 | %s',
   },
-  description: '프론트엔드 개발자 김명식의 포트폴리오 입니다.',
+  // description: '프론트엔드 개발자 김명식의 포트폴리오 입니다.',
   icons: {
     icon: 'favicon.ico',
   },
   keywords:
     '프론트엔드, 포트폴리오, front-end, frontend, front, portfolio, 개발자, 프론트엔드 개발자, 이력서',
   robots: 'INDEX, FOLLOW',
+  openGraph: {
+    type: 'website',
+    // 배포후 url 넣어야함
+    url: '',
+    siteName: '김명식 포트폴리오',
+    description: '프론트엔드 개발자 김명식의 포트폴리오 입니다.',
+    images: [
+      {
+        url: 'https://user-images.githubusercontent.com/77043973/236410475-876c5054-8ef3-47cb-8c26-e731e323855e.jpeg',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko" className={openSans.className}>
-      <body className="w-full h-screen bg-red-400">
+      <head>
+        {/*  나중에 구글, 네이버 검색엔진 메타태그 넣으면됨 */}
+        {/* <meta name="description" content="faenfieln23213123"></meta> */}
+      </head>
+      <body className="w-full h-screen">
         {/* <header>header</header> */}
         <main>{children}</main>
       </body>
