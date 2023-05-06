@@ -1,12 +1,14 @@
 import React from 'react';
-import Underline from '../gasp/UnderLine';
-import ScrollTriggerFadeIn from '../gasp/ScrollTriggerFadeIn';
-import TopToBottomFadeIn from '../gasp/TopToBottomFadeIn';
+import Underline from '../../gasp/UnderLine';
+import ScrollTriggerFadeIn from '../../gasp/ScrollTriggerFadeIn';
+import TopToBottomFadeIn from '../../gasp/TopToBottomFadeIn';
 
 export default function SkillSection() {
   return (
-    <section className="h-screen w-full bg-red-400 pt-[20vh]">
-      <div className="bg-blue-300 max-w-screen-lg mx-auto">
+    <section className="w-full h-screen bg-white pt-[150px] relative">
+      <article className=" max-w-screen-lg bg-slate-700 mx-auto">feaff</article>
+
+      {/* <div className="bg-blue-300 max-w-screen-lg mx-auto">
         <Underline
           delay={0.2}
           duration={2}
@@ -25,7 +27,7 @@ export default function SkillSection() {
         <TopToBottomFadeIn delay={0.5}>
           <div>3142412312312313</div>
         </TopToBottomFadeIn>
-      </div>
+      </div> */}
     </section>
   );
 }
