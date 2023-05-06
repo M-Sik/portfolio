@@ -4,31 +4,26 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { Project } from '@/types/projects';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import Styles from './ProjectCard.module.scss';
 
 type Props = {
-  projects: Project;
+  project: Project;
 };
 
-export default function ProjectCard({ projects: { name, bgImg, bgImgAlt, skills, link } }: Props) {
-  const router = useRouter;
+export default function ProjectCard({ project: { name, bgImg, bgImgAlt, skills, link } }: Props) {
+  const router = useRouter();
   const [isHovering, setIsHovering] = useState(false);
 
   const movePage = () => {
-    console.log(window.history.state.idx, document.documentElement.scrollTop, window.pageYOffset);
-    // sessionStorage.setItem(
-    //   `__next_scroll_${window.history.state.idx}`,
-    //   JSON.stringify({
-    //     x: window.pageXOffset,
-    //     y: window.pageYOffset,
-    //   }),
-    // );
+    router.push(link);
   };
 
   return (
     <section
       onMouseOver={() => setIsHovering(true)}
       onMouseOut={() => setIsHovering(false)}
-      className="w-full rounded-2xl shadow-orange-100 border drop-shadow-md relative"
+      className={`w-full rounded-2xl border relative cursor-pointer my-2 ${Styles.shadow_6}`}
     >
       <article className="w-full h-[200px] relative">
         <Image
@@ -37,9 +32,10 @@ export default function ProjectCard({ projects: { name, bgImg, bgImgAlt, skills,
           fill
           sizes="200"
           className=" rounded-t-2xl object-cover"
+          loading="lazy"
         />
       </article>
-      <article className="p-2">
+      <article className="p-2 ">
         <p className="font-bold">🚀 {name}</p>
         <div className="w-full flex gap-2 flex-wrap mt-1">
           {skills.map((skill) => (
@@ -50,12 +46,14 @@ export default function ProjectCard({ projects: { name, bgImg, bgImgAlt, skills,
         </div>
       </article>
       <div
-        onClick={movePage}
         className={`w-full h-full bg-black/50 absolute top-0 rounded-2xl transition-all duration-500 flex justify-center items-center ${
           isHovering ? 'opacity-100' : 'opacity-0'
         }`}
+        draggable={false}
       >
-        <p className="text-white font-bold">👉 클릭해서 자세히 보기 👈</p>
+        <Link href={link} className="text-white font-bold hover:text-yellow-400" draggable={true}>
+          👉 클릭해서 자세히 보기 👈
+        </Link>
       </div>
     </section>
   );

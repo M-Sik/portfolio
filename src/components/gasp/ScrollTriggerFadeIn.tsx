@@ -20,8 +20,8 @@ export default function ScrollTriggerFadeIn({ children, delay, className }: Prop
       scrollTrigger: {
         trigger: target.current,
         toggleActions: 'restart none none reverse',
-        start: 'top 100%',
-        end: 'bottom 20%',
+        // start: 'top 100%',
+        // end: 'bottom 20%',
         // scrub: false,
       },
       opacity: 0,

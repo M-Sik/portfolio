@@ -18,8 +18,8 @@ export default function BottomToTopFadeIn({ children, delay, className = '' }: P
       scrollTrigger: {
         trigger: target.current,
         toggleActions: 'restart none none reset',
-        start: 'top 100%',
-        end: 'bottom 0%',
+        // start: 'top 100%',
+        // end: 'bottom 0%',
         // scrub: true,
       },
       y: 100,

@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/*  나중에 구글, 네이버 검색엔진 메타태그 넣으면됨 */}
         {/* <meta name="description" content="faenfieln23213123"></meta> */}
       </head>
-      <body className="w-full h-screen">
+      <body className="w-full">
         {/* <header>header</header> */}
         <main>{children}</main>
       </body>

@@ -36,7 +36,7 @@ const careers = [
         bgImg: ChiumBg,
         bgImgAlt: '치움 배경이미지',
         skills: ['Vue.js', 'Javascript', 'Scss', 'Vuex', 'Vuetify', 'Git', 'Github'],
-        link: '/chium/wegnal',
+        link: '/projects/wegnal',
       },
     ],
   },
@@ -44,7 +44,7 @@ const careers = [
 
 export default function CareerSection() {
   return (
-    <section className="w-full bg-white lg:pt-[150px] relative">
+    <section className="w-full bg-white lg:pt-[150px] py-3 relative">
       <article className=" max-w-[800px] mx-auto mobile:px-4 mobile:py-7">
         <BottomToTopFadeIn delay={0}>
           <Underline
@@ -65,9 +65,9 @@ export default function CareerSection() {
                 </h1>
               </BottomToTopFadeIn>
               <BottomToTopFadeIn delay={0}>
-                <div className="w-full mt-6 grid grid-cols-2 gap-4 ">
+                <div className="w-full mt-6 grid md:grid-cols-2 gap-4 ">
                   {projects.map((project) => (
-                    <ProjectCard key={project.name} projects={project} />
+                    <ProjectCard key={project.name} project={project} />
                   ))}
                 </div>
               </BottomToTopFadeIn>
