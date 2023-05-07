@@ -24,7 +24,7 @@ const skills = [
 
 export default function SkillSection() {
   return (
-    <section className="w-full bg-white lg:pt-[150px] relative">
+    <section id="test2" className="w-full bg-white lg:pt-[150px] relative">
       <article className=" max-w-[800px] mx-auto mobile:px-4 mobile:py-7">
         <BottomToTopFadeIn delay={0}>
           <Underline
