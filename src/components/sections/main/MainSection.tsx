@@ -2,9 +2,13 @@ import React from 'react';
 import MainSideBar from '@/components/bars/MainSideBar';
 import MainContent from './MainContent';
 
-export default function MainSection() {
+type Props = {
+  id: string;
+};
+
+export default function MainSection({ id }: Props) {
   return (
-    <section id="test1" className="w-full h-screen flex mobile:flex-col ">
+    <section id={id} className="w-full h-screen flex mobile:flex-col ">
       <MainSideBar />
       <MainContent />
     </section>

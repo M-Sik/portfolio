@@ -8,26 +8,23 @@ import SkillSection from '@/components/sections/skills/SkillSection';
 import { useThrottle } from '@/hooks/useThrottle';
 import { useEffect } from 'react';
 
-// console.log('zzzzzz');
-
 export default function Home() {
   const handleScroll = useThrottle(() => {
-    console.log(document.getElementById('test1')?.getBoundingClientRect().top);
-    console.log(document.getElementById('test2')?.getBoundingClientRect().top);
+    console.log(document.getElementById('mainSection')?.getBoundingClientRect().top);
+    console.log(document.getElementById('skillSection')?.getBoundingClientRect().top);
   }, 1000);
 
-  // };
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [handleScroll]);
   return (
     <section className="h-full">
-      <MainSection />
+      <MainSection id="mainSection" />
       <div className=" relative">
-        <SkillSection />
-        <CareerSection />
-        <ProjectSecton />
+        <SkillSection id="skillSection" />
+        <CareerSection id="careerSection" />
+        <ProjectSecton id="projectSection" />
         <SideNavBar />
       </div>
     </section>

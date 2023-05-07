@@ -40,9 +40,13 @@ const projects = [
   },
 ];
 
-export default function ProjectSecton() {
+type Props = {
+  id: string;
+};
+
+export default function ProjectSecton({ id }: Props) {
   return (
-    <section className="w-full bg-white lg:py-[150px] relative">
+    <section id={id} className="w-full bg-white lg:py-[150px] relative">
       <article className=" max-w-[800px] mx-auto mobile:px-4 mobile:py-7">
         <BottomToTopFadeIn delay={0}>
           <Underline

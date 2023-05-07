@@ -42,9 +42,13 @@ const careers = [
   },
 ];
 
-export default function CareerSection() {
+type Props = {
+  id: string;
+};
+
+export default function CareerSection({ id }: Props) {
   return (
-    <section className="w-full bg-white lg:pt-[150px] py-3 relative">
+    <section id={id} className="w-full bg-white lg:pt-[150px] py-3 relative">
       <article className=" max-w-[800px] mx-auto mobile:px-4 mobile:py-7">
         <BottomToTopFadeIn delay={0}>
           <Underline
