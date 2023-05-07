@@ -1,3 +1,4 @@
+import Footer from '@/components/footers/Footer';
 import './globals.css';
 import { Open_Sans } from 'next/font/google';
 
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="w-full">
         {/* <header>header</header> */}
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
