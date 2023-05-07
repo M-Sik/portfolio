@@ -33,7 +33,7 @@ export default function SkillSection() {
             color="rgb(248, 205, 7)"
             className=" text-2xl w-full block"
           >
-            <p className="font-bold text-neutral-700">🛠️ 기술 스택</p>
+            <h1 className="font-bold text-neutral-700">🛠️ 기술 스택</h1>
           </Underline>
         </BottomToTopFadeIn>
         <section className="mt-6">

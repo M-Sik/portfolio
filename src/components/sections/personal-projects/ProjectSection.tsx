@@ -51,7 +51,7 @@ export default function ProjectSecton() {
             color="rgb(248, 205, 7)"
             className=" text-2xl w-full block"
           >
-            <p className="font-bold text-neutral-700">💻 개인 프로젝트</p>
+            <h1 className="font-bold text-neutral-700">💻 개인 프로젝트</h1>
           </Underline>
         </BottomToTopFadeIn>
         <section className="mt-6 hidden md:block">

@@ -53,7 +53,7 @@ export default function CareerSection() {
             color="rgb(248, 205, 7)"
             className=" text-2xl w-full block"
           >
-            <p className="font-bold text-neutral-700">💼 경력</p>
+            <h1 className="font-bold text-neutral-700">💼 경력</h1>
           </Underline>
         </BottomToTopFadeIn>
         <section>
