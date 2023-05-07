@@ -1,7 +1,6 @@
 import React from 'react';
 import bgImg from '../../../../public/images/main/portfolio_main_bg.jpeg';
 import Image from 'next/image';
-import styles from './MainContent.module.scss';
 import ArrowBottoIcon from '@/components/icons/ArrowBottoIcon';
 import TopToBottomFadeIn from '@/components/gasp/TopToBottomFadeIn';
 import ScrollTriggerFadeIn from '@/components/gasp/ScrollTriggerFadeIn';
@@ -27,7 +26,15 @@ export default function MainContent() {
         <p className={`${SMAIL_SIZE_FONT} mt-1`}>매일 2시간 이상 게임을 즐기고있습니다.</p>
       </TopToBottomFadeIn>
       <ScrollTriggerFadeIn className="text-center" delay={3.2}>
-        <ArrowBottoIcon animation />
+        <button
+          onClick={() =>
+            document
+              .getElementById('skillSection')
+              ?.scrollIntoView({ block: 'start', behavior: 'smooth' })
+          }
+        >
+          <ArrowBottoIcon animation />
+        </button>
       </ScrollTriggerFadeIn>
       <div className=" w-full fixed top-0 lg:left-[220px] z-[-1]">
         <Image
