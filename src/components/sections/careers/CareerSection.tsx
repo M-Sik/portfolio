@@ -36,7 +36,7 @@ const careers = [
         bgImg: ChiumBg,
         bgImgAlt: '치움 배경이미지',
         skills: ['Vue.js', 'Javascript', 'Scss', 'Vuex', 'Vuetify', 'Git', 'Github'],
-        link: '/projects/wegnal',
+        link: '/projects/chium',
       },
     ],
   },
