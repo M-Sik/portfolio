@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollTriggerFadeIn from '../gasp/ScrollTriggerFadeIn';
+import FadeIn from '../gasp/FadeIn';
 import LinkText from '../etc/LinkText';
 // import useIsMobile from '@/hooks/useIsMobile';
 
@@ -7,7 +7,7 @@ export default function MainSideBar() {
   return (
     <aside className="lg:h-full bg-neutral-900 px-6 py-14 mobile:py-4">
       <section className="flex flex-col h-full justify-between">
-        <ScrollTriggerFadeIn delay={1}>
+        <FadeIn delay={1}>
           <div className="flex flex-col gap-5 mobile:items-center mobile:gap-0">
             <LinkText
               url="https://github.com/M-Sik"
@@ -24,8 +24,8 @@ export default function MainSideBar() {
               Blog <span className="text-yellow-400">.</span>
             </LinkText>
           </div>
-        </ScrollTriggerFadeIn>
-        <ScrollTriggerFadeIn delay={1}>
+        </FadeIn>
+        <FadeIn delay={1}>
           <div className="flex flex-col">
             <p className=" text-gray-200 mb-3 mx-auto mobile:text-xs mobile:mt-2">
               rlaaudtlr233@gmail.com
@@ -34,7 +34,7 @@ export default function MainSideBar() {
               Last Update: 2023/05/05
             </p>
           </div>
-        </ScrollTriggerFadeIn>
+        </FadeIn>
       </section>
     </aside>
   );

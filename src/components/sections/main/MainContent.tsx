@@ -3,7 +3,7 @@ import bgImg from '../../../../public/images/main/portfolio_main_bg.jpeg';
 import Image from 'next/image';
 import ArrowBottoIcon from '@/components/icons/ArrowBottoIcon';
 import TopToBottomFadeIn from '@/components/gasp/TopToBottomFadeIn';
-import ScrollTriggerFadeIn from '@/components/gasp/ScrollTriggerFadeIn';
+import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
 
 export default function MainContent() {
@@ -25,7 +25,7 @@ export default function MainContent() {
         <p className={`${SMAIL_SIZE_FONT} mt-1`}>열심히 레벨업 하고있습니다.</p>
         <p className={`${SMAIL_SIZE_FONT} mt-1`}>매일 2시간 이상 게임을 즐기고있습니다.</p>
       </TopToBottomFadeIn>
-      <ScrollTriggerFadeIn className="text-center" delay={3.2}>
+      <FadeIn className="text-center" delay={3.2}>
         <button
           onClick={() =>
             document
@@ -35,7 +35,7 @@ export default function MainContent() {
         >
           <ArrowBottoIcon animation />
         </button>
-      </ScrollTriggerFadeIn>
+      </FadeIn>
       <div className=" w-full fixed top-0 lg:left-[220px] z-[-1]">
         <Image
           src={bgImg}

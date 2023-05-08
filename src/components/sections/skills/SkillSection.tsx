@@ -1,6 +1,5 @@
 import React from 'react';
 import Underline from '../../gasp/UnderLine';
-import ScrollTriggerFadeIn from '../../gasp/ScrollTriggerFadeIn';
 import BottomToTopFadeIn from '@/components/gasp/BottomToTopFadeIn';
 
 const skills = [
