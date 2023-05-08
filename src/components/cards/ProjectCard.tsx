@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Project } from '@/types/projects';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Styles from './ProjectCard.module.scss';
 
@@ -12,12 +11,7 @@ type Props = {
 };
 
 export default function ProjectCard({ project: { name, bgImg, bgImgAlt, skills, link } }: Props) {
-  const router = useRouter();
   const [isHovering, setIsHovering] = useState(false);
-
-  const movePage = () => {
-    router.push(link);
-  };
 
   return (
     <section

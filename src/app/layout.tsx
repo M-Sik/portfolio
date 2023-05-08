@@ -9,7 +9,7 @@ export const metadata = {
     default: '김명식 포트폴리오',
     template: '김명식 포트폴리오 | %s',
   },
-  // description: '프론트엔드 개발자 김명식의 포트폴리오 입니다.',
+  description: '프론트엔드 개발자 김명식의 포트폴리오 입니다.',
   icons: {
     icon: 'favicon.ico',
   },
