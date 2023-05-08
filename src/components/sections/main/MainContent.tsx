@@ -27,6 +27,7 @@ export default function MainContent() {
       </TopToBottomFadeIn>
       <FadeIn className="text-center" delay={3.2}>
         <button
+          name="scroll bottom button"
           onClick={() =>
             document
               .getElementById('skillSection')
