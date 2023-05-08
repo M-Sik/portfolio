@@ -56,6 +56,7 @@ export default function Home() {
       </div>
       {scrollTopBtn && (
         <button
+          name="scrollTopBtn"
           onClick={() =>
             document
               .getElementById('mainSection')
