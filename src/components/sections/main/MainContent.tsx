@@ -28,6 +28,7 @@ export default function MainContent() {
       <FadeIn className="text-center" delay={3.2}>
         <button
           name="scroll bottom button"
+          aria-label="scroll bottom button"
           onClick={() =>
             document
               .getElementById('skillSection')

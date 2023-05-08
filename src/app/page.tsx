@@ -57,6 +57,7 @@ export default function Home() {
       {scrollTopBtn && (
         <button
           name="scrollTopBtn"
+          aria-label="scrollTopBtn"
           onClick={() =>
             document
               .getElementById('mainSection')

@@ -76,12 +76,17 @@ const MultiCarousel = ({ children, imgWidth, imgCount }: Props) => {
     <div className="flex">
       <BottomToTopFadeIn delay={0.3}>
         <div className=" relative pt-8 pl-2">
-          <button name="arrow left button" className="mr-4" onClick={leftClick}>
+          <button
+            aria-label="arrow left button"
+            name="arrow left button"
+            className="mr-4"
+            onClick={leftClick}
+          >
             <BsArrowLeftCircle
               className={`text-4xl ${currentImgOrder === 0 ? 'text-gray-400' : 'text-black'}`}
             />
           </button>
-          <button name="arrow right button" onClick={rightClick}>
+          <button aria-label="arrow right button" name="arrow right button" onClick={rightClick}>
             <BsArrowRightCircle
               className={`text-4xl ${
                 currentImgOrder === imgCount - 1 ? 'text-gray-400' : 'text-black'
