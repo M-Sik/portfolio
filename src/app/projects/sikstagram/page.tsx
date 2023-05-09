@@ -1,8 +1,17 @@
 'use client';
 
+import BottomToTopFadeIn from '@/components/gasp/BottomToTopFadeIn';
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
 import React, { useEffect } from 'react';
+import OAtuhGif from '../../../../public/images/projects/sikstagram/sikstagram_Oauth.gif';
+import AddPostGif from '../../../../public/images/projects/sikstagram/sikstagram_addpost.gif';
+import LikeBookmarkCommentGif from '../../../../public/images/projects/sikstagram/sikstagram_like_bookmark_comment.gif';
+import SearchUserGif from '../../../../public/images/projects/sikstagram/sikstagram_user_search.gif';
+import FollowUnfollowGif from '../../../../public/images/projects/sikstagram/sikstagram_user_follow_unfollow.gif';
+import FollowUserInfoGif from '../../../../public/images/projects/sikstagram/sikstagram_followuser_info.gif';
+import MyPostedBookmarkLikeGif from '../../../../public/images/projects/sikstagram/sikstagram_mypost_bookmarked_liked.gif';
+import Image from 'next/image';
 
 const links = [
   {
@@ -17,6 +26,43 @@ const links = [
   },
 ];
 const skills = ['Next.js 13', 'React.js 18', 'Typescript', 'Swr', 'Tailwindcss', 'Git', 'Github'];
+const previews = [
+  {
+    title: 'OAuth 로그인 👇👇',
+    gifSrc: OAtuhGif,
+    alt: 'oauth login gif',
+  },
+  {
+    title: '게시글 등록 👇👇',
+    gifSrc: AddPostGif,
+    alt: '게시글 등록 gif',
+  },
+  {
+    title: '게시글 및 게시글 상세화면 좋아요, 북마크, 댓글 작성 👇👇',
+    gifSrc: LikeBookmarkCommentGif,
+    alt: '게시글 및 게시글 상세화면 좋아요, 북마크, 댓글 작성 gif',
+  },
+  {
+    title: 'Debounce를 이용한 유저 검색 👇👇',
+    gifSrc: SearchUserGif,
+    alt: 'Debounce를 이용한 유저 검색 gif',
+  },
+  {
+    title: '유저 팔로우, 언팔로우 👇👇',
+    gifSrc: FollowUnfollowGif,
+    alt: '유저 팔로우, 언팔로우 gif',
+  },
+  {
+    title: '팔로우한 유저 정보보기 👇👇',
+    gifSrc: FollowUserInfoGif,
+    alt: '팔로우한 유저 정보보기 gif',
+  },
+  {
+    title: '해당 유저가 쓴 게시글, 북마크한 글, 좋아요한 글 조회 👇👇',
+    gifSrc: MyPostedBookmarkLikeGif,
+    alt: '해당 유저가 쓴 게시글, 북마크한 글, 좋아요한 글 조회 gif',
+  },
+];
 
 export default function SikstagramPage() {
   useEffect(() => {
@@ -37,7 +83,7 @@ export default function SikstagramPage() {
           있었으며, 13버전에서 새로나온 개념인 서버 컴포넌트, 클라이언트 컴포넌트에 대해 깊게 공부할
           수 있었습니다.
           <br />
-          백엔드 데이터 관리는 Headless Cms인 [Sanity.io](http://Sanity.io) 를 이용하였습니다.
+          백엔드 데이터 관리는 Headless Cms인 Sanity.io 를 이용하였습니다.
         </p>
       </FadeIn>
       <FadeIn delay={0.9}>
@@ -67,10 +113,13 @@ export default function SikstagramPage() {
       <FadeIn delay={1.5}>
         <h2 className={subTitleStyle}>💻 작업 내용</h2>
         <ul className={listStyle}>
+          <li>Lighthouse를 이용한 웹 성능 검사</li>
+        </ul>
+        <ul className={listStyle}>
           <li>Sanity를 이용한 백엔드 데이터 관리</li>
         </ul>
         <ul className={listStyle}>
-          <li>OAuth 로그인(구글, 카카오) 구현</li>
+          <li>NextAuth를 이용한 OAuth 로그인(구글, 카카오) 구현</li>
         </ul>
         <ul className={listStyle}>
           <li>
@@ -117,10 +166,22 @@ export default function SikstagramPage() {
           <li>개인 프로젝트</li>
         </ul>
       </FadeIn>
+      <BottomToTopFadeIn delay={0}>
+        <h2 className={subTitleStyle}>📺 미리 보기</h2>
+      </BottomToTopFadeIn>
+
+      {previews.map(({ title, gifSrc, alt }) => (
+        <BottomToTopFadeIn key={title} delay={0.3}>
+          <h3 className={previewTitleStyle}>{title}</h3>
+          <Image src={gifSrc} alt={alt} className={previewGifStyle} />
+        </BottomToTopFadeIn>
+      ))}
     </section>
   );
 }
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
+const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
+const previewGifStyle = 'mt-3 mb-8';
 const listStyle = 'mt-2 list-disc pl-6';
 const linkStyle = 'hover:text-yellow-400 hover:font-bold';
