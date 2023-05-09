@@ -69,7 +69,7 @@ export default function ProjectSecton({ id }: Props) {
               ))}
           </MultiCarousel>
         </section>
-        {/* 모바일일 때 보여줌 왜 컷밋 안되지 */}
+        {/* 모바일일 때 보여줌 */}
         <section className="mt-4 block md:hidden">
           <BottomToTopFadeIn delay={0}>
             <div className="w-full mt-6 grid md:grid-cols-2 gap-4 ">
