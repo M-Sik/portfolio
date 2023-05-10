@@ -112,7 +112,7 @@ export default function DiaryPage() {
         <h2 className={subTitleStyle}>📺 미리 보기</h2>
       </BottomToTopFadeIn>
 
-      {previews.map(({ title, gifSrc, alt }) => (
+      {previews.map(({ title, gifSrc, alt }, index) => (
         <BottomToTopFadeIn key={title} delay={0.3} className=" relative">
           <h3 className={previewTitleStyle}>{title}</h3>
           <Image

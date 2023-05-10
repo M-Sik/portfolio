@@ -173,7 +173,13 @@ export default function SikstagramPage() {
       {previews.map(({ title, gifSrc, alt }) => (
         <BottomToTopFadeIn key={title} delay={0.3}>
           <h3 className={previewTitleStyle}>{title}</h3>
-          <Image src={gifSrc} alt={alt} className={previewGifStyle} />
+          <Image
+            src={gifSrc}
+            alt={alt}
+            className={previewGifStyle}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8f5WhHgAHBAJV9F76jAAAAABJRU5ErkJggg=="
+          />
         </BottomToTopFadeIn>
       ))}
     </section>
