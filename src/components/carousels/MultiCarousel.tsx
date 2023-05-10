@@ -42,33 +42,25 @@ const MultiCarousel = ({ children, imgWidth, imgCount }: Props) => {
 
   // 마우스 드래그
   const [startX, setStartX] = useState(0);
-  const [distance, setDistance] = useState(0);
 
   function handleMouseDown(e: React.MouseEvent) {
+    // console.log('드래그 시작');
     setStartX(e.clientX);
-    return;
-  }
-
-  function handleMouseMove(e: React.MouseEvent) {
-    if (startX !== null) {
-      const dx = e.clientX - startX;
-      setDistance(dx);
-    }
     return;
   }
 
   function handleMouseUp(e: React.MouseEvent) {
     // console.log('스타트 x => ', startX);
     // console.log('움직인 거리 => ', distance);
-    if (distance < -50) {
+    // console.log(e.clientX);
+    if (startX - e.clientX > 50) {
       if (currentImgOrder === imgCount - 1) return;
       setcCurrentImgOrder(currentImgOrder + 1);
-    } else if (distance > 50) {
+    } else if (startX - e.clientX < -50) {
       if (currentImgOrder === 0) return;
       setcCurrentImgOrder(currentImgOrder - 1);
     }
     setStartX(0);
-    setDistance(0);
     return;
   }
 
@@ -102,7 +94,6 @@ const MultiCarousel = ({ children, imgWidth, imgCount }: Props) => {
       <article
         className={`items-center w-[600px] ml-auto overflow-hidden`}
         onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         draggable={false}
       >
