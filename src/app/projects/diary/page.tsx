@@ -23,6 +23,7 @@ const links = [
   },
 ];
 const skills = ['React.js 18', 'Typescript', 'Zustand', 'Scss', 'Git', 'Github'];
+
 const previews = [
   {
     title: '메인화면 타이핑 효과 👇👇',
@@ -112,9 +113,15 @@ export default function DiaryPage() {
       </BottomToTopFadeIn>
 
       {previews.map(({ title, gifSrc, alt }) => (
-        <BottomToTopFadeIn key={title} delay={0.3}>
+        <BottomToTopFadeIn key={title} delay={0.3} className=" relative">
           <h3 className={previewTitleStyle}>{title}</h3>
-          <Image src={gifSrc} alt={alt} className={previewGifStyle} />
+          <Image
+            src={gifSrc}
+            alt={alt}
+            className={previewGifStyle}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8f5WhHgAHBAJV9F76jAAAAABJRU5ErkJggg=="
+          />
         </BottomToTopFadeIn>
       ))}
     </section>
