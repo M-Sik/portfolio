@@ -16,7 +16,7 @@ const careers = [
         name: 'Wegnal 랜딩 페이지',
         bgImg: WegnalLandingBg,
         bgImgAlt: '웨그널 랜딩페이지 배경이미지',
-        skills: ['Next.js 13', 'React.js', 'Scss', 'Tailwindcss', 'Git', 'Github'],
+        skills: ['Next.js 13', 'React.js', 'Typescript', 'Scss', 'Tailwindcss', 'Git', 'Github'],
         link: '/projects/wegnal-landing',
       },
       {
