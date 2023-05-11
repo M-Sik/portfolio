@@ -13,13 +13,29 @@ export const metadata = {
   icons: {
     icon: 'favicon.ico',
   },
-  keywords:
-    '프론트엔드, 포트폴리오, front-end, frontend, front, portfolio, 개발자, 프론트엔드 개발자, 이력서',
+  //
+  // '프론트엔드, 포트폴리오, front-end, frontend, front, portfolio, 개발자, 프론트엔드 개발자, 이력서'
+  keywords: [
+    '프론트엔드 김명식 포트폴리오',
+    '프론트엔드 김명식',
+    '개발자 김명식',
+    '프론트엔드',
+    '포트폴리오',
+    '김명식',
+    'front',
+    '프론트',
+    'portfolio',
+    '개발자',
+    '프론트 개발자',
+    '프론트엔드 개발자',
+    '이력서',
+  ],
   robots: 'INDEX, FOLLOW',
+  applicationName: '김명식 포트폴리오',
   openGraph: {
     type: 'website',
     // 배포후 url 넣어야함
-    url: '',
+    url: 'https://devsik-portfolio.vercel.app/',
     siteName: '김명식 포트폴리오',
     description: '프론트엔드 개발자 김명식의 포트폴리오 입니다.',
     images: [
