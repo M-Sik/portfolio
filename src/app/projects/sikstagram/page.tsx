@@ -113,7 +113,7 @@ export default function SikstagramPage() {
       <FadeIn delay={1.5}>
         <h2 className={subTitleStyle}>💻 작업 내용</h2>
         <ul className={listStyle}>
-          <li>Lighthouse를 이용한 웹 성능 검사</li>
+          <li>Lighthouse를 이용한 웹 성능 및 웹 접근성 검사</li>
         </ul>
         <ul className={listStyle}>
           <li>Sanity를 이용한 백엔드 데이터 관리</li>

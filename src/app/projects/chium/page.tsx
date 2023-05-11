@@ -12,13 +12,13 @@ const links = [
   },
   {
     url: 'https://play.google.com/store/apps/details?id=aos.gonsoftware.chium',
-    label: 'chium aos link',
-    text: '👉 안드로이드 앱 보러가기 👈',
+    label: 'chium googleplay link',
+    text: '👉 구글플레이 앱 보러가기 👈',
   },
   {
     url: 'https://apps.apple.com/kr/app/치움/id1623767946',
-    label: 'chium ios link',
-    text: '👉 아이폰 앱 보러가기 👈',
+    label: 'chium appstore link',
+    text: '👉 앱스토어 앱 보러가기 👈',
   },
 ];
 const skills = ['Vue.js', 'Javascript', 'Scss', 'Vuex', 'Vuetify', 'Git', 'Github'];
@@ -37,8 +37,8 @@ export default function ChiumPage() {
       </FadeIn>
       <FadeIn delay={0.6}>
         <p className="mt-4">
-          Chium은 폐기물 배출자와 수거업체를 연결해 주는 폐끼물 안전처리 서비스 입니다. 배출자와
-          수거업체간의 입 찰 과정을 통하여 폐기물을 처리하며, 배출자는 가장 저렴한 가격에 폐기물을
+          Chium은 폐기물 배출자와 수거업체를 연결해 주는 폐기물 안전처리 서비스 입니다. 배출자와
+          수거업체간의 입찰 과정을 통하여 폐기물을 처리하며, 배출자는 가장 저렴한 가격에 폐기물을
           배출할 수 있습니다.
         </p>
       </FadeIn>

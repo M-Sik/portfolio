@@ -12,13 +12,13 @@ const links = [
   },
   {
     url: 'https://play.google.com/store/apps/details?id=aos.gonsoftware.wegnal',
-    label: 'wegnal aos link',
-    text: '👉 안드로이드 앱 보러가기 👈',
+    label: 'wegnal googleplay link',
+    text: '👉 구글플레이 앱 보러가기 👈',
   },
   {
     url: 'https://apps.apple.com/us/app/웨그널/id6446239095',
-    label: 'wegnal ios link',
-    text: '👉 아이폰 앱 보러가기 👈',
+    label: 'wegnal appstore link',
+    text: '👉 앱스토어 앱 보러가기 👈',
   },
 ];
 const skills = ['Vue.js', 'Typescript', 'Scss', 'Vuex', 'Vuetify', 'Git', 'Github'];
