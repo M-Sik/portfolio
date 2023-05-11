@@ -92,25 +92,52 @@ export default function WastecommunityPage() {
           </ul>
         </ul>
         <ul className={listStyle}>
-          <li>Jwt 토큰을 이용한 인증 로직 구현</li>
+          <li>반응형 UI 구현</li>
         </ul>
         <ul className={listStyle}>
           <li>Typescript 도입</li>
         </ul>
         <ul className={listStyle}>
-          <li>재사용 스크립트를 모듈화</li>
+          <li>쓰로틀링을 이용한 무한스크롤 구현</li>
         </ul>
         <ul className={listStyle}>
-          <li>디자이너와 협업하여 재사용 가능한 UI를 설계하여 개발 일정 단축</li>
+          <li>Jwt 토큰을 이용한 인증 로직 구현</li>
         </ul>
         <ul className={listStyle}>
-          <li>UI 라이브러리를 적절히 활용하여 빠른 UI 개발</li>
+          <li>회원 관련 기능 구현</li>
+          <ul className={listStyle}>
+            <li>로그인, 회원가입, 비밀번호 찾기, 마이페이지 정보 관리</li>
+          </ul>
         </ul>
         <ul className={listStyle}>
-          <li>반응형 UI 구현</li>
+          <li>게시글 관련 기능 구현</li>
+          <ul className={listStyle}>
+            <li>
+              게시글 조회•삭제, 게시글 상세내용 조회, 좋아요, 스크랩, 댓글 작성, 대댓글 작성,
+              신고하기, 쪽지 보내기 등등
+            </li>
+          </ul>
+        </ul>
+        <ul className={listStyle}>
+          <li>기타 기능 구현</li>
+          <ul className={listStyle}>
+            <li>
+              알림 내역 관리, 1:1 문의, 쪽지 조회•발송•삭제, 유저 차단, 신고하기, 스크랩한 글•작성한
+              글•작성한 댓글 관리 등등
+            </li>
+          </ul>
         </ul>
         <ul className={listStyle}>
           <li>사내 Waste Community 서비스 관리를 위한 Admin 페이지 개발</li>
+          <ul className={listStyle}>
+            <li>
+              회원 정보 조회•수정•삭제, 게시글 조회•수정•삭제, 회원 및 게시글 내역 통계 차트 구현
+              등등
+            </li>
+          </ul>
+        </ul>
+        <ul className={listStyle}>
+          <li>디자이너와 협업하여 재사용 가능한 UI를 설계하여 개발 일정 단축</li>
         </ul>
         <ul className={listStyle}>
           <li>가독성과 관리하기 좋은 Css를 위해 Scss 도입</li>
