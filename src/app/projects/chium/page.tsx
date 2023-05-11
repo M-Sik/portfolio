@@ -84,13 +84,31 @@ export default function ChiumPage() {
           </ul>
         </ul>
         <ul className={listStyle}>
+          <li>아임포트 모듈을 이용하여 다날 본인인증 서비스 연동</li>
+        </ul>
+        <ul className={listStyle}>
           <li>Jwt 토큰을 이용한 인증 로직 구현</li>
         </ul>
         <ul className={listStyle}>
-          <li>상태관리 라이브러리인 Vuex를 이용하여 Props 복잡도 개선</li>
+          <li>회원 관련 기능 구현</li>
+          <ul className={listStyle}>
+            <li>로그인, 회원가입, 아이디 찾기, 비밀번호 찾기, 마이페이지 정보 관리</li>
+          </ul>
         </ul>
         <ul className={listStyle}>
-          <li>아임포트 모듈을 이용하여 다날 본인인증 서비스 연동</li>
+          <li>폐기물 배출자 관련 기능 구현</li>
+          <ul className={listStyle}>
+            <li>
+              배출 신청 및 신청내역 조회, 방문 신청한 업체 관리, 폐기물 입찰 내역 관리, 폐기물
+              처리내역 관리, 수거 업체 검색 및 조회, 거래 히스토리 관리 등등
+            </li>
+          </ul>
+        </ul>
+        <ul className={listStyle}>
+          <li>기타 기능 구현</li>
+          <ul className={listStyle}>
+            <li>알림 내역 관리, 푸쉬 알림에 따른 페이지 이동, 1:1문의</li>
+          </ul>
         </ul>
         <ul className={listStyle}>
           <li>재사용 되는 UI가 있지만 컴포넌트화 되지 않았던 UI들을 컴포넌트로 변경</li>
