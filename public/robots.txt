@@ -1,2 +1,9 @@
+# *
 User-agent: *
-Allow:/
+Allow: /
+
+# Host
+Host: https://devsik-portfolio.vercel.app/
+
+# Sitemaps
+Sitemap: https://devsik-portfolio.vercel.app/sitemap.xml
