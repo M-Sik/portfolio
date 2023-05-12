@@ -3,11 +3,19 @@ import MultiCarousel from '@/components/carousels/MultiCarousel';
 import BottomToTopFadeIn from '@/components/gasp/BottomToTopFadeIn';
 import Underline from '@/components/gasp/UnderLine';
 import React from 'react';
-import SikstagramBg from '../../../../public/images/projects/sikstagram_bg.png';
-import DiaryBg from '../../../../public/images/projects/diary_bg.png';
-import AboutMeBg from '../../../../public/images/projects/about_me_bg.png';
+import PortfolioBg from '../../../../public/images/projects/portfolio/portfolio_bg.png';
+import SikstagramBg from '../../../../public/images/projects/sikstagram/sikstagram_bg.png';
+import DiaryBg from '../../../../public/images/projects/diary/diary_bg.png';
+import AboutMeBg from '../../../../public/images/projects/about-me/about_me_bg.png';
 
 const projects = [
+  {
+    name: 'Portfolio',
+    bgImg: PortfolioBg,
+    bgImgAlt: 'portfolio 배경이미지',
+    skills: ['Next.js', 'React.js', 'Typescript', 'Tailwindcss', 'Scss', 'Git', 'Github'],
+    link: '/projects/portfolio',
+  },
   {
     name: 'Sikstagram',
     bgImg: SikstagramBg,
