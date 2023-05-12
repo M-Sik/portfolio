@@ -76,28 +76,19 @@ export default function ChiumPage() {
         <h2 className={subTitleStyle}>💻 담당 업무</h2>
         <ul className={listStyle}>
           <li>WebView를 이용한 Aos, Ios 앱 개발</li>
-          <ul className={listStyle}>
-            <li>
-              Ios의 경우 앱 종료 시 웹 로컬스토리지가 초기화되는 문제가 발생하여 Native 저장소에
-              초기화되지 않아야 할 데이터를 저장하여 문제를 해결하였습니다.
-            </li>
-          </ul>
         </ul>
         <ul className={listStyle}>
-          <li>아임포트 모듈을 이용하여 다날 본인인증 서비스 연동</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>Jwt 토큰을 이용한 인증 로직 구현</li>
+          <li>아임포트 Module을 이용하여 다날 본인인증 서비스 연동</li>
         </ul>
         <ul className={listStyle}>
           <li>회원 관련 기능 구현</li>
-          <ul className={listStyle}>
+          <ul className={listIndentStyle}>
             <li>로그인, 회원가입, 아이디 찾기, 비밀번호 찾기, 마이페이지 정보 관리</li>
           </ul>
         </ul>
         <ul className={listStyle}>
           <li>폐기물 배출자 관련 기능 구현</li>
-          <ul className={listStyle}>
+          <ul className={listIndentStyle}>
             <li>
               배출 신청 및 신청내역 조회, 방문 신청한 업체 관리, 폐기물 입찰 내역 관리, 폐기물
               처리내역 관리, 수거 업체 검색 및 조회, 거래 히스토리 관리 등등
@@ -106,12 +97,9 @@ export default function ChiumPage() {
         </ul>
         <ul className={listStyle}>
           <li>기타 기능 구현</li>
-          <ul className={listStyle}>
+          <ul className={listIndentStyle}>
             <li>알림 내역 관리, 푸쉬 알림에 따른 페이지 이동, 1:1문의</li>
           </ul>
-        </ul>
-        <ul className={listStyle}>
-          <li>재사용 되는 UI가 있지만 컴포넌트화 되지 않았던 UI들을 컴포넌트로 변경</li>
         </ul>
         <ul className={listStyle}>
           <li>UI 라이브러리를 적절히 활용하여 빠른 UI 개발</li>
@@ -134,5 +122,6 @@ export default function ChiumPage() {
 }
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-const listStyle = 'mt-2 list-disc pl-6';
+const listStyle = 'mt-4 list-disc pl-6';
+const listIndentStyle = 'mt-1 list-disc pl-6 list-[circle]';
 const linkStyle = 'hover:text-yellow-400 hover:font-bold';
