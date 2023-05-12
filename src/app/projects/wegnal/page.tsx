@@ -89,7 +89,9 @@ export default function WegnalPage() {
         <ul className={listStyle}>
           <li>초기 로딩속도 향상을 위한 최적화 작업 수행</li>
           <ul className={listIndentStyle}>
-            <li>Bundle 최적화, Code Splitting, Font 최적화 적용</li>
+            <li>Bundle 최적화(1.51MB → 1.44MB)</li>
+            <li>Font 최적화(868KB ⇒ 169KB)</li>
+            <li>Code Splitting</li>
           </ul>
         </ul>
         <ul className={listStyle}>

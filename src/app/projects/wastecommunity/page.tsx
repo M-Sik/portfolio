@@ -64,6 +64,11 @@ export default function WastecommunityPage() {
         <h2 className={subTitleStyle}>💻 담당 업무</h2>
         <ul className={listStyle}>
           <li>초기 로딩속도 향상을 위한 최적화 작업 수행</li>
+          <ul className={listIndentStyle}>
+            <li>Bundle 최적화(802.28KB → 733.58KB)</li>
+            <li>Font 최적화(4.7MB ⇒ 196KB)</li>
+            <li>Code Splitting</li>
+          </ul>
         </ul>
         <ul className={listStyle}>
           <li>Responsive UI 구현</li>
