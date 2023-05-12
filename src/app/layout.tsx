@@ -50,6 +50,7 @@ export const metadata = {
   },
   other: {
     'naver-site-verification': '49fce68022c80ddf1bd9ec930d3d46e45b3a3f07',
+    'google-site-verification': 'pAkyluLe3coyszs7TVsAh8zwonYg2gm_Ku1r-jmdlt8',
   },
 };
 
