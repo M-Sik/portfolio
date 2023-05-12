@@ -67,26 +67,17 @@ export default function WegnalLandingPage() {
         <ul className={listStyle}>
           <li>SEO 최적화</li>
           <ul className={listStyle}>
-            <li>robots.txt, sitemap, 메타 태그 작성</li>
-            <li>시맨틱 태그 사용</li>
+            <li>Robots.txt, Sitemap, Metadata, Semantic Tag</li>
           </ul>
         </ul>
         <ul className={listStyle}>
-          <li>반응형 UI 구현</li>
+          <li>Responsive UI 구현</li>
         </ul>
         <ul className={listStyle}>
           <li>User Agent를 활용하여 앱 다운로드 링크 변경</li>
         </ul>
         <ul className={listStyle}>
-          <li>gsap를 이용한 애니메이션 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>라이브러리를 쓰지 않고 멀티 및 싱글 캐러셀 구현</li>
-          <ul className={listStyle}>
-            <li>버튼을 이용한 슬라이딩 기능 구현</li>
-            <li>드래그를 이용한 슬라이딩 기능 구현</li>
-            <li>모바일 터치를 지원하기 위해 터치 이벤트를 이용한 슬라이딩 기능 구현</li>
-          </ul>
+          <li>Gsap를 이용한 애니메이션 구현</li>
         </ul>
       </FadeIn>
       <FadeIn delay={2.1}>
