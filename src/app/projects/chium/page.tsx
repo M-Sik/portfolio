@@ -102,7 +102,7 @@ export default function ChiumPage() {
           </ul>
         </ul>
         <ul className={listStyle}>
-          <li>UI 라이브러리를 적절히 활용하여 빠른 UI 개발</li>
+          <li>UI Library를 적절히 활용하여 빠른 UI 개발</li>
         </ul>
         <ul className={listStyle}>
           <li>운영 중에 발생하는 버그 및 고객 개선사항에 따른 수정</li>

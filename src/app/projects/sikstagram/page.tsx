@@ -116,48 +116,30 @@ export default function SikstagramPage() {
           <li>Lighthouse를 이용한 웹 성능 및 웹 접근성 검사</li>
         </ul>
         <ul className={listStyle}>
-          <li>Sanity를 이용한 백엔드 데이터 관리</li>
+          <li>Sanity를 이용한 서버 데이터 관리</li>
         </ul>
         <ul className={listStyle}>
-          <li>NextAuth를 이용한 OAuth 로그인(구글, 카카오) 구현</li>
+          <li>회원 관련 기능 구현</li>
+          <ul className={listIndentStyle}>
+            <li>
+              OAuth 로그인(구글, 카카오), Next Meddleware를 이용한 User Session에 따른 처리,
+              마이페이지
+            </li>
+          </ul>
         </ul>
         <ul className={listStyle}>
-          <li>
-            Next meddleware를 통해 로그인하지 않거나 세션이 만료된 경우 로그인 페이지로 redirect
-            기능 구현
-          </li>
+          <li>게시글 관련 기능 구현</li>
+          <ul className={listIndentStyle}>
+            <li>게시글 작성•조회, 좋아요, 북마크, 댓글 작성</li>
+          </ul>
         </ul>
         <ul className={listStyle}>
-          <li>게시글 등록 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>이미지 드로그앤 드롭 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>팔로우한 유저 Carousel 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>팔로우한 유저 및 본인이 작성한 글 조회 기능 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>
-            게시글의 좋아요, 북마크, 댓글 등 변경사항이 생길시 Swr을 이용하여 게시글 정보 동기화
-            기능 구현
-          </li>
-        </ul>
-        <ul className={listStyle}>
-          <li>좋아요, 북마크, 댓글 작성 기능 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>팔로우, 언팔로우 기능 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>Debounce를 이용한 유저 검색 기능 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>
-            유저 상세페이지 구현(followers, following, 내가쓴 게시글, 좋아요한 글, 북마크한 글)
-          </li>
+          <li>기타 기능 구현</li>
+          <ul className={listIndentStyle}>
+            <li>
+              File Drag and Drop, Swr을 이용한 데이터 동기화, 유저 팔로우•언팔로우, 사용자 검색
+            </li>
+          </ul>
         </ul>
       </FadeIn>
       <FadeIn delay={1.8}>
@@ -187,7 +169,9 @@ export default function SikstagramPage() {
 }
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
+const listStyle = 'mt-4 list-disc pl-6';
+const listIndentStyle = 'mt-1 list-disc pl-6 list-[circle]';
+const linkStyle = 'hover:text-yellow-400 hover:font-bold';
+
 const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
 const previewGifStyle = 'mt-3 mb-8';
-const listStyle = 'mt-2 list-disc pl-6';
-const linkStyle = 'hover:text-yellow-400 hover:font-bold';

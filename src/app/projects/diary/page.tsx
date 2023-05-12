@@ -129,7 +129,8 @@ export default function DiaryPage() {
 }
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
+const listStyle = 'mt-4 list-disc pl-6';
+const linkStyle = 'hover:text-yellow-400 hover:font-bold';
+
 const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
 const previewGifStyle = 'mt-3 mb-8';
-const listStyle = 'mt-2 list-disc pl-6';
-const linkStyle = 'hover:text-yellow-400 hover:font-bold';
