@@ -170,7 +170,7 @@ export default function SikstagramPage() {
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
 const listStyle = 'mt-4 list-disc pl-6';
-const listIndentStyle = 'mt-1 list-disc pl-6 list-[circle]';
+const listIndentStyle = 'mt-1 list-disc pl-6 !list-[circle]';
 const linkStyle = 'hover:text-yellow-400 hover:font-bold';
 
 const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
