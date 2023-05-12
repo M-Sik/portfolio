@@ -31,6 +31,7 @@ export const metadata = {
     '이력서',
   ],
   robots: 'INDEX, FOLLOW',
+  // ???
   applicationName: '김명식 포트폴리오',
   openGraph: {
     type: 'website',
