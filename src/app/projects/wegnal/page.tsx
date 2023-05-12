@@ -122,6 +122,9 @@ export default function WegnalPage() {
           </ul>
         </ul>
         <ul className={listStyle}>
+          <li>쓰로틀링을 이용한 무한스크롤 구현</li>
+        </ul>
+        <ul className={listStyle}>
           <li>Jwt 토큰을 이용한 인증 로직 구현</li>
         </ul>
         <ul className={listStyle}>
