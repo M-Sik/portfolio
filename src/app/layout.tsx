@@ -32,6 +32,7 @@ export const metadata = {
   ],
   applicationName: '김명식 포트폴리오',
   openGraph: {
+    title: '프론트엔드 개발자 김명식 포트폴리오',
     type: 'website',
     // 배포후 url 넣어야함
     url: 'https://devsik-portfolio.vercel.app/',
