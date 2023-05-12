@@ -95,32 +95,21 @@ export default function PortFolioPage() {
         </ul>
         <ul className={listStyle}>
           <li>SEO 최적화</li>
-          <ul className={listStyle}>
-            <li>robots.txt, sitemap, 메타 태그 작성</li>
-            <li>시맨틱 태그 사용</li>
+          <ul className={listIndentStyle}>
+            <li>Robots.txt, Sitemap, Metadata, Semantic Tag</li>
           </ul>
         </ul>
         <ul className={listStyle}>
-          <li>반응형 UI 구현</li>
+          <li>Responsive UI 구현</li>
         </ul>
         <ul className={listStyle}>
-          <li>gsap를 이용한 애니메이션 구현</li>
+          <li>Gsap를 이용한 애니메이션 구현</li>
         </ul>
         <ul className={listStyle}>
-          <li>스크롤 위치에 따른 목차 하이라이팅 기능 구현</li>
+          <li>스크롤 위치에 따른 목차 하이라이팅 구현</li>
         </ul>
         <ul className={listStyle}>
-          <li>라이브러리를 쓰지 않고 멀티 캐러셀 구현</li>
-          <ul className={listStyle}>
-            <li>버튼을 이용한 슬라이딩 기능 구현</li>
-            <li>드래그를 이용한 슬라이딩 기능 구현</li>
-          </ul>
-        </ul>
-        <ul className={listStyle}>
-          <li>사용기술, 경력, 프로젝트 UI 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>프로젝트 상세 내용 구현</li>
+          <li>Library를 이용하지 않은 Carousel 구현</li>
         </ul>
       </FadeIn>
       <FadeIn delay={1.8}>
@@ -153,7 +142,9 @@ export default function PortFolioPage() {
 }
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
+const listStyle = 'mt-4 list-disc pl-6';
+const listIndentStyle = 'mt-1 list-disc pl-6 list-[circle]';
+const linkStyle = 'hover:text-yellow-400 hover:font-bold';
+
 const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
 const previewGifStyle = 'mt-3 mb-8';
-const listStyle = 'mt-2 list-disc pl-6';
-const linkStyle = 'hover:text-yellow-400 hover:font-bold';
