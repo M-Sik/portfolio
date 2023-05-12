@@ -74,8 +74,8 @@ export default function WegnalPage() {
       <FadeIn delay={1.8}>
         <h2 className={subTitleStyle}>💻 담당 업무</h2>
         <ul className={listStyle}>
-          <li>Vue.js Option API에서 Composition API로 리펙토링 진행</li>
-          <ul className={listStyle}>
+          <li>Vue.js Option API에서 Composition API로 Refactoring</li>
+          <ul className={listIndentStyle}>
             <li>
               기존에는 Option API를 활용하여 작업하였으나 소스 코드가 많아질수록 연관되어있는 코드가
               나누어져있어 로직을 추적하기 어려웠습니다. 이를 해결하기 위해 Composition API를
@@ -85,57 +85,22 @@ export default function WegnalPage() {
         </ul>
         <ul className={listStyle}>
           <li>WebView를 이용한 Aos, Ios 앱 개발</li>
-          <ul className={listStyle}>
-            <li>
-              Ios의 경우 앱 종료 시 웹 로컬스토리지가 초기화되는 문제가 발생하여 Native 저장소에
-              초기화되지 않아야 할 데이터를 저장하여 문제를 해결하였습니다.
-            </li>
+        </ul>
+        <ul className={listStyle}>
+          <li>초기 로딩속도 향상을 위한 최적화 작업 수행</li>
+          <ul className={listIndentStyle}>
+            <li>Bundle 최적화, Code Splitting, Font 최적화 적용</li>
           </ul>
-        </ul>
-        <ul className={listStyle}>
-          <li>
-            번들 사이즈 최적화 <span className="font-bold">{`(1.51MB => 1.44MB)`}</span>, Code
-            Splitting, 폰트{' '}
-            <span className="font-bold">{`(868KB ⇒ 169KB)`} 등 최적화 작업 수행</span>
-          </li>
-          <ul className={listStyle}>
-            <li>
-              <a
-                href="https://sikk.tistory.com/117"
-                target="_blank"
-                aria-label="번들 최적화, code splitting 참고 블로그 포스팅"
-                className={linkStyle}
-              >
-                👉 번들 최적화, Code Splitting 참고 포스팅 보러가기 👈
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://sikk.tistory.com/120"
-                target="_blank"
-                aria-label="폰트 최적화 참고 블로그 포스팅"
-                className={linkStyle}
-              >
-                👉 폰트 최적화 참고 포스팅 👈
-              </a>
-            </li>
-          </ul>
-        </ul>
-        <ul className={listStyle}>
-          <li>쓰로틀링을 이용한 무한스크롤 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>Jwt 토큰을 이용한 인증 로직 구현</li>
         </ul>
         <ul className={listStyle}>
           <li>회원 관련 기능 구현</li>
-          <ul className={listStyle}>
+          <ul className={listIndentStyle}>
             <li>로그인, 회원가입, 아이디 찾기, 비밀번호 찾기, 마이페이지 정보 관리</li>
           </ul>
         </ul>
         <ul className={listStyle}>
           <li>폐기물 배출자 관련 기능 구현</li>
-          <ul className={listStyle}>
+          <ul className={listIndentStyle}>
             <li>
               폐기물 배출 신청•취소•거래완료, 배출 신청 정보 조회, 배출 신청을 수락한 수거업체 조회
               등등
@@ -144,30 +109,24 @@ export default function WegnalPage() {
         </ul>
         <ul className={listStyle}>
           <li>폐기물 수거업체 관련 기능 구현</li>
-          <ul className={listStyle}>
+          <ul className={listIndentStyle}>
             <li>배출 신청 수락•거절, 배출 신청 내역 조회 등등</li>
           </ul>
         </ul>
         <ul className={listStyle}>
           <li>기타 기능 구현</li>
-          <ul className={listStyle}>
+          <ul className={listIndentStyle}>
             <li>푸쉬 알림에 따른 페이지 이동, 거래내역 히스토리, 알림 내역, 전화 연결</li>
           </ul>
         </ul>
         <ul className={listStyle}>
-          <li>사내 Wegnal 서비스 관리를 위한 Admin 페이지 개발</li>
-          <ul className={listStyle}>
+          <li>사내 Wegnal 서비스 관리를 위한 관리자 페이지 개발</li>
+          <ul className={listIndentStyle}>
             <li>
               회원 정보 조회•수정•삭제, 배출 신청된 내역 조회•수정•삭제, 회원 및 배출신청 내역 통계
               차트 구현 등등
             </li>
           </ul>
-        </ul>
-        <ul className={listStyle}>
-          <li>카카오맵 API를 이용하여 지도, 위치기반의 데이터를 다루어 지도로 화면에 표현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>디자이너와 협업하여 재사용 가능한 UI 설계</li>
         </ul>
       </FadeIn>
       <FadeIn delay={2.1}>
@@ -181,5 +140,6 @@ export default function WegnalPage() {
 }
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-const listStyle = 'mt-2 list-disc pl-6';
+const listStyle = 'mt-4 list-disc pl-6';
+const listIndentStyle = 'mt-1 list-disc pl-6 list-[circle]';
 const linkStyle = 'hover:text-yellow-400 hover:font-bold';

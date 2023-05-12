@@ -66,7 +66,7 @@ export default function WegnalLandingPage() {
         <h2 className={subTitleStyle}>💻 담당 업무</h2>
         <ul className={listStyle}>
           <li>SEO 최적화</li>
-          <ul className={listStyle}>
+          <ul className={listIndentStyle}>
             <li>Robots.txt, Sitemap, Metadata, Semantic Tag</li>
           </ul>
         </ul>
@@ -90,5 +90,6 @@ export default function WegnalLandingPage() {
   );
 }
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-const listStyle = 'mt-2 list-disc pl-6';
+const listStyle = 'mt-4 list-disc pl-6';
+const listIndentStyle = 'mt-1 list-disc pl-6 list-[circle]';
 const linkStyle = 'hover:text-yellow-400 hover:font-bold';
