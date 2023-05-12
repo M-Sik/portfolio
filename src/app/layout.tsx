@@ -30,7 +30,6 @@ export const metadata = {
     '프론트엔드 개발자',
     '이력서',
   ],
-  robots: 'INDEX, FOLLOW',
   applicationName: '김명식 포트폴리오',
   openGraph: {
     type: 'website',
@@ -43,6 +42,13 @@ export const metadata = {
         url: 'https://user-images.githubusercontent.com/77043973/236410475-876c5054-8ef3-47cb-8c26-e731e323855e.jpeg',
       },
     ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  other: {
+    'naver-site-verification': '49fce68022c80ddf1bd9ec930d3d46e45b3a3f07',
   },
 };
 
