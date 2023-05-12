@@ -7,7 +7,6 @@ export const skills = [
   'Next.js',
   'React.js',
   'Typescript',
-  'Redux',
   'Zustand',
   'ReactQuery',
   'Scss',
@@ -17,7 +16,7 @@ export const skills = [
 export const roles = ['프론트엔드 개발'];
 export const workDetails = [
   {
-    content: { type: 'text', href: '', text: '웹뷰(React.js, Redux) 내 신규 기능 개발 및 운영' },
+    content: { type: 'text', href: '', text: '웹뷰(React.js) 내 신규 기능 개발 및 운영' },
     contentDetails: [],
   },
   {
@@ -32,7 +31,7 @@ export const workDetails = [
     content: {
       type: 'text',
       href: '',
-      text: '검색 노출 및 레거시 프로젝트 개선 및 통합을 위한 웨딩북 리뉴얼 프로젝트(Next.js, Zustand) 신규 개발 참여 및 운영',
+      text: '검색 노출 및 레거시 프로젝트 개선 및 통합을 위한 웨딩북 리뉴얼 프로젝트(Next.js) 신규 개발 참여 및 운영',
     },
     contentDetails: [
       '웨딩북 웹뷰의 경우 대부분의 기능이 React.js 기반으로 구현이 되어있으나 일부 기능은 다른 스팩(Vue.js, Next.js 등)으로 만들어진 레거시 프로젝트에 있어 기술 스택 통일화 및 프로젝트 관리를 편하게 하기위해 분산된 프로젝트를 통합시키는 작업을 진행중입니다.',
@@ -67,7 +66,7 @@ export const troubleShootings = [
       {
         subTitle: '[문제 배경]',
         content:
-          '기존 로직은 로그인 시 서버에서 클라이언트로 Jwt Access, Refresh 토큰을 쿠키에 저장해주는 방식이 아닌, API 응답 값에 토큰을 전달하여 클라이언트에서 로컬 스토리지에 토큰들을 저장하는 구조 즉, XSS에 취약한 환경이었습니다.\n서버 개발자분들에게 인증 인가 관련된 로직 수정을 요청 하였지만, 일정상의 이슈로 어려울 것 같다는 답변을 받아. 클라이언트에서 처리 가능한 방법을 찾아야 했습니다.',
+          '기존 로직은 로그인 시 Jwt Access, Refresh 토큰을 클라이언트 로컬 스토리지에 토큰들을 저장하는 구조 즉, XSS에 취약한 환경이었습니다.',
       },
       {
         subTitle: '[해결 방법]',
