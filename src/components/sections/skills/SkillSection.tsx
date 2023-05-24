@@ -19,6 +19,10 @@ const skills = [
     title: 'Tool',
     contents: ['Git', 'Github', 'Figma'],
   },
+  {
+    title: 'Used at least once',
+    contents: ['Aws', 'Mongodb'],
+  },
 ];
 
 type Props = {
