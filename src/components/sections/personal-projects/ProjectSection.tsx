@@ -3,12 +3,20 @@ import MultiCarousel from '@/components/carousels/MultiCarousel';
 import BottomToTopFadeIn from '@/components/gasp/BottomToTopFadeIn';
 import Underline from '@/components/gasp/UnderLine';
 import React from 'react';
+import SiklogBg from '../../../../public/images/projects/siklog/siklog_home.png';
 import PortfolioBg from '../../../../public/images/projects/portfolio/portfolio_bg.png';
 import SikstagramBg from '../../../../public/images/projects/sikstagram/sikstagram_bg.png';
 import DiaryBg from '../../../../public/images/projects/diary/diary_bg.png';
 import AboutMeBg from '../../../../public/images/projects/about-me/about_me_bg.png';
 
 const projects = [
+  {
+    name: 'Siklog',
+    bgImg: SiklogBg,
+    bgImgAlt: 'siklog 배경이미지',
+    skills: ['Next.js', 'React.js', 'Typescript', 'Aws', 'Mongodb', 'Tailwindcss', 'Git', 'Github'],
+    link: '/projects/siklog',
+  },
   {
     name: 'Portfolio',
     bgImg: PortfolioBg,
