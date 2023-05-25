@@ -18,10 +18,17 @@ export default function MainSideBar() {
             </LinkText>
             <LinkText
               url="https://sikk.tistory.com/"
-              label="blog link"
+              label="Tistory link"
               className="flex font-bold text-3xl mobile:text-xl text-white p-2"
             >
-              Blog <span className="text-yellow-400">.</span>
+              Tistory <span className="text-yellow-400">.</span>
+            </LinkText>
+            <LinkText
+              url="https://siklog.shop/"
+              label="siklog link"
+              className="flex font-bold text-3xl mobile:text-xl text-white p-2"
+            >
+              Siklog <span className="text-yellow-400">.</span>
             </LinkText>
           </div>
         </FadeIn>
