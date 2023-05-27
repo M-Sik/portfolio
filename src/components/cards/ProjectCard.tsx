@@ -17,7 +17,7 @@ export default function ProjectCard({ project: { name, bgImg, bgImgAlt, skills, 
     <section
       onMouseOver={() => setIsHovering(true)}
       onMouseOut={() => setIsHovering(false)}
-      className={`w-full rounded-2xl border relative cursor-pointer my-2 ${Styles.shadow_6}`}
+      className={`w-full rounded-2xl border relative my-2 ${Styles.shadow_6}`}
     >
       <article className="w-full h-[200px] relative">
         <Image
