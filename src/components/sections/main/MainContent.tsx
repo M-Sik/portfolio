@@ -10,7 +10,10 @@ export default function MainContent() {
   return (
     <article className="w-full h-full flex flex-col justify-center items-center relative">
       <TopToBottomFadeIn delay={1.5}>
-        <p className={`${BIG_SIZE_FONT} mb-6`}>게임을 즐기는 프론트엔드 개발자</p>
+        <p className={`${BIG_SIZE_FONT} mb-6`}>프로그래밍 이라는 게임을 즐기는</p>
+      </TopToBottomFadeIn>
+      <TopToBottomFadeIn delay={1.7}>
+        <p className={`${BIG_SIZE_FONT} mb-6`}>프론트엔드 개발자</p>
       </TopToBottomFadeIn>
       <TopToBottomFadeIn delay={1.9}>
         <p className={`${BIG_SIZE_FONT}`}>
@@ -23,7 +26,6 @@ export default function MainContent() {
       <TopToBottomFadeIn className="text-center" delay={2.8}>
         <p className={`${SMAIL_SIZE_FONT} mt-6`}>프로그래밍이라는 게임을 즐기며</p>
         <p className={`${SMAIL_SIZE_FONT} mt-1`}>열심히 레벨업 하고있습니다.</p>
-        <p className={`${SMAIL_SIZE_FONT} mt-1`}>매일 2시간 이상 게임을 즐기고있습니다.</p>
       </TopToBottomFadeIn>
       <FadeIn className="text-center" delay={3.2}>
         <button
