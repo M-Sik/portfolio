@@ -17,7 +17,7 @@ const careers = [
         name: 'Withwe 홈페이지',
         bgImg: WithweHomepageBg,
         bgImgAlt: '위드위 홈페이지 배경이미지',
-        skills: ['Next.js 13', 'React.js', 'Typescript', 'Tailwindcss', 'Git', 'Github'],
+        skills: ['Next.js 13', 'React.js', 'Typescript', 'Tailwindcss', 'AWS', 'Git', 'Github'],
         link: '/projects/withwe-homepage',
       },
       {

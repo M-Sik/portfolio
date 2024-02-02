@@ -6,12 +6,24 @@ import React, { useEffect } from 'react';
 
 const links = [
   {
-    url: 'https://wegnal.kr',
+    url: 'https://withwe.kr',
     label: 'wegnal landing web link',
     text: '👉 웹 보러가기 👈',
   },
 ];
-const skills = ['Next.js 13', 'React.js', 'Typescript', 'Scss', 'Tailwindcss', 'Git', 'Github'];
+const skills = [
+  'Next.js 13',
+  'React.js',
+  'Typescript',
+  'Scss',
+  'Tailwindcss',
+  'Aws',
+  'Ec2',
+  'Pm2',
+  'Nginx',
+  'Git',
+  'Github',
+];
 
 export default function WithweHomePage() {
   useEffect(() => {
@@ -26,11 +38,7 @@ export default function WithweHomePage() {
         </Underline>
       </FadeIn>
       <FadeIn delay={0.6}>
-        <p className="mt-4">
-          Wegnal 프로젝트는 SPA인 Vue.js로 구현 되어있어 SEO에 노출이 어려웠습니다. 이를 해결하기
-          위해 랜딩페이지를 제작 하였으며 SEO를 최적화 하기 위해 Pre-rendering을 지원하는 Next.js를
-          활용하여 개발하였습니다.
-        </p>
+        <p className="mt-4">회사를 대표하는 홈페이지이며 Next.js를 활용하여 개발하였습니다.</p>
       </FadeIn>
       <FadeIn delay={0.9}>
         <h2 className={subTitleStyle}>🔗 서비스 링크</h2>
@@ -74,7 +82,7 @@ export default function WithweHomePage() {
           <li>Responsive UI 구현</li>
         </ul>
         <ul className={listStyle}>
-          <li>User Agent를 활용하여 앱 다운로드 링크 변경</li>
+          <li>AWS ec2, pm2, nginx를 이용한 호스팅</li>
         </ul>
         <ul className={listStyle}>
           <li>Gsap를 이용한 애니메이션 구현</li>
