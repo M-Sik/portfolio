@@ -27,9 +27,7 @@ export default function WegnalLandingPage() {
       </FadeIn>
       <FadeIn delay={0.6}>
         <p className="mt-4">
-          Wegnal 프로젝트는 SPA인 Vue.js로 구현 되어있어 SEO에 노출이 어려웠습니다. 이를 해결하기
-          위해 랜딩페이지를 제작 하였으며 SEO를 최적화 하기 위해 Pre-rendering을 지원하는 Next.js를
-          활용하여 개발하였습니다.
+          Wegnal프로젝트를 소개하는 프로젝트이며, Next.js를 활용하여 개발하였습니다.
         </p>
       </FadeIn>
       <FadeIn delay={0.9}>
