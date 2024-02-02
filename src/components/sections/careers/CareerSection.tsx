@@ -1,6 +1,7 @@
 import BottomToTopFadeIn from '@/components/gasp/BottomToTopFadeIn';
 import Underline from '@/components/gasp/UnderLine';
 import React from 'react';
+import WithweHomepageBg from '../../../../public/images/careers/withwe_bg.png';
 import WegnalLandingBg from '../../../../public/images/careers/wegnal_landing_bg.jpg';
 import WegnalBg from '../../../../public/images/careers/wegnal_bg.jpg';
 import WasteCommunityBg from '../../../../public/images/careers/wastecommunity_bg.png';
@@ -12,6 +13,13 @@ const careers = [
     comp: '(주) 위드위',
     year: '(2022.11 ~ 재직중)',
     projects: [
+      {
+        name: 'Withwe 홈페이지',
+        bgImg: WithweHomepageBg,
+        bgImgAlt: '위드위 홈페이지 배경이미지',
+        skills: ['Next.js 13', 'React.js', 'Typescript', 'Tailwindcss', 'Git', 'Github'],
+        link: '/projects/withwe-homepage',
+      },
       {
         name: 'Wegnal 랜딩 페이지',
         bgImg: WegnalLandingBg,

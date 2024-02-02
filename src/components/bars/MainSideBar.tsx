@@ -38,7 +38,7 @@ export default function MainSideBar() {
               rlaaudtlr233@gmail.com
             </p>
             <p className=" text-gray-400 mx-auto mobile:text-xs lg:w-[183px]">
-              Last Update: 2023/06/20
+              Last Update: 2024/02/02
             </p>
           </div>
         </FadeIn>
