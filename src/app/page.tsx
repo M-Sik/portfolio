@@ -6,14 +6,12 @@ import CareerSection from '@/components/sections/careers/CareerSection';
 import MainSection from '@/components/sections/main/MainSection';
 import ProjectSecton from '@/components/sections/personal-projects/ProjectSection';
 import SkillSection from '@/components/sections/skills/SkillSection';
-import { useDebounce } from '@/hooks/useDebounce';
 import { useThrottle } from '@/hooks/useThrottle';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [scrollTopBtn, setScrollTopBtn] = useState(false);
   const [highlight, setHighlight] = useState<'skill' | 'career' | 'project'>('skill');
-  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleScroll = useThrottle(() => {
     let scrollH = document.documentElement.scrollTop;
@@ -47,13 +45,7 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [handleScroll]);
   return (
-    <section
-      className="h-full relative"
-      onMouseMove={(e) => {
-        // console.log(e.clientX, e.clientY);
-        setPosition({ x: e.pageX, y: e.pageY });
-      }}
-    >
+    <section className="h-full relative">
       <MainSection id="mainSection" />
       <div className=" relative">
         <SkillSection id="skillSection" />
@@ -75,12 +67,6 @@ export default function Home() {
           <ArrowTopIcon />
         </button>
       )}
-      <div
-        className={`absolute text-3xl left-[-15px] top-[-40px]`}
-        style={{ transform: `translate(${position.x}px, ${position.y}px)` }}
-      >
-        😁
-      </div>
     </section>
   );
 }
