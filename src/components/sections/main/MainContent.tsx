@@ -10,18 +10,18 @@ export default function MainContent() {
   return (
     <article className="w-full h-full flex flex-col justify-center items-center relative">
       <TopToBottomFadeIn delay={1.5}>
-        <p className={`${BIG_SIZE_FONT} mb-6`}>프로그래밍 이라는 게임을 즐기는</p>
+        <h1 className={`${BIG_SIZE_FONT} mb-6`}>프로그래밍 이라는 게임을 즐기는</h1>
       </TopToBottomFadeIn>
       <TopToBottomFadeIn delay={1.7}>
-        <p className={`${BIG_SIZE_FONT} mb-6`}>프론트엔드 개발자</p>
+        <h1 className={`${BIG_SIZE_FONT} mb-6`}>프론트엔드 개발자</h1>
       </TopToBottomFadeIn>
       <TopToBottomFadeIn delay={1.9}>
-        <p className={`${BIG_SIZE_FONT}`}>
+        <h1 className={`${BIG_SIZE_FONT}`}>
           <Underline delay={2.4} color="rgb(248, 205, 7)" className="text-7xl mobile:text-4xl">
             김명식
           </Underline>
           입니다.
-        </p>
+        </h1>
       </TopToBottomFadeIn>
       <TopToBottomFadeIn className="text-center" delay={2.8}>
         <p className={`${SMAIL_SIZE_FONT} mt-6`}>프로그래밍이라는 게임을 즐기며</p>

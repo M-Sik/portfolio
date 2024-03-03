@@ -73,16 +73,16 @@ export default function CareerSection({ id }: Props) {
             color="rgb(248, 205, 7)"
             className=" text-2xl w-full block"
           >
-            <h1 className="font-bold text-neutral-700">💼 경력</h1>
+            <h2 className="font-bold text-neutral-700">💼 경력</h2>
           </Underline>
         </BottomToTopFadeIn>
         <section>
           {careers.map(({ comp, year, projects }) => (
             <article key={comp} className="mt-6">
               <BottomToTopFadeIn delay={0}>
-                <h1 className="text-xl font-bold">
+                <h3 className="text-xl font-bold">
                   {comp} <span className="text-gray-600">{year}</span>{' '}
-                </h1>
+                </h3>
               </BottomToTopFadeIn>
               <BottomToTopFadeIn delay={0}>
                 <div className="w-full mt-6 grid md:grid-cols-2 gap-4 ">
