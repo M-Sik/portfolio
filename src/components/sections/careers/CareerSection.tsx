@@ -76,7 +76,7 @@ export default function CareerSection({ id }: Props) {
             <h2 className="font-bold text-neutral-700">💼 경력</h2>
           </Underline>
         </BottomToTopFadeIn>
-        <section>
+        <div>
           {careers.map(({ comp, year, projects }) => (
             <article key={comp} className="mt-6">
               <BottomToTopFadeIn delay={0}>
@@ -85,15 +85,17 @@ export default function CareerSection({ id }: Props) {
                 </h3>
               </BottomToTopFadeIn>
               <BottomToTopFadeIn delay={0}>
-                <div className="w-full mt-6 grid md:grid-cols-2 gap-4 ">
+                <ul className="w-full mt-6 grid md:grid-cols-2 gap-4 ">
                   {projects.map((project) => (
-                    <ProjectCard key={project.name} project={project} />
+                    <li key={project.name}>
+                      <ProjectCard project={project} />
+                    </li>
                   ))}
-                </div>
+                </ul>
               </BottomToTopFadeIn>
             </article>
           ))}
-        </section>
+        </div>
       </article>
     </section>
   );

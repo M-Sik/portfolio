@@ -19,26 +19,22 @@ export default function ProjectCard({ project: { name, bgImg, bgImgAlt, skills, 
       onMouseOut={() => setIsHovering(false)}
       className={`w-full rounded-2xl border relative my-2 ${Styles.shadow_6}`}
     >
-      <article className="w-full h-[200px] relative">
-        <Image
-          src={bgImg}
-          alt={bgImgAlt}
-          fill
-          sizes="200"
-          className=" rounded-t-2xl object-cover"
-          loading="lazy"
-        />
-      </article>
-      <article className="p-2 ">
-        <p className="font-bold">🚀 {name}</p>
-        <div className="w-full flex gap-2 flex-wrap mt-1">
+      <Image
+        src={bgImg}
+        alt={bgImgAlt}
+        className="rounded-t-2xl object-cover w-full h-[200px]"
+        loading="lazy"
+      />
+      <div className="p-2 ">
+        <b className="font-bold">🚀 {name}</b>
+        <ul className="w-full flex gap-2 flex-wrap mt-1">
           {skills.map((skill) => (
-            <p key={skill} className="py-1 px-2 bg-gray-200 rounded-md text-purple-600 font-bold">
+            <li key={skill} className="py-1 px-2 bg-gray-200 rounded-md text-purple-600 font-bold">
               {skill}
-            </p>
+            </li>
           ))}
-        </div>
-      </article>
+        </ul>
+      </div>
       <div
         className={`w-full h-full bg-black/50 absolute top-0 rounded-2xl transition-all duration-500 flex justify-center items-center ${
           isHovering ? 'opacity-100' : 'opacity-0'
