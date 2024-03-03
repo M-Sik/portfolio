@@ -79,9 +79,9 @@ export default function ProjectSecton({ id }: Props) {
             {projects.length > 0 &&
               projects.map((project) => (
                 // <CarouselCard key={index} text={card.text} color={card.color} />
-                <div key={project.name} className="w-[390px] overflow-hidden flex-shrink-0">
+                <li key={project.name} className="w-[390px] overflow-hidden flex-shrink-0">
                   <ProjectCard project={project} />
-                </div>
+                </li>
               ))}
           </MultiCarousel>
         </section>

@@ -14,7 +14,7 @@ type Props = {
 const IMG_GAP = 16;
 
 const MultiCarousel = ({ children, imgWidth, imgCount }: Props) => {
-  const MultiCarouselRef = useRef<HTMLDivElement>(null);
+  const MultiCarouselRef = useRef<HTMLUListElement>(null);
   const [currentImgOrder, setcCurrentImgOrder] = useState(0);
 
   const IMG_WIDTH = imgWidth + IMG_GAP;
@@ -98,9 +98,9 @@ const MultiCarousel = ({ children, imgWidth, imgCount }: Props) => {
         draggable={false}
       >
         <BottomToTopFadeIn delay={0.8}>
-          <div ref={MultiCarouselRef} className={`flex gap-[16px] items-center `} draggable={false}>
+          <ul ref={MultiCarouselRef} className={`flex gap-[16px] items-center `} draggable={false}>
             {children}
-          </div>
+          </ul>
         </BottomToTopFadeIn>
       </article>
     </div>
