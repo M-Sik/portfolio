@@ -12,6 +12,7 @@ import FollowUnfollowGif from '../../../../public/images/projects/sikstagram/sik
 import FollowUserInfoGif from '../../../../public/images/projects/sikstagram/sikstagram_followuser_info.gif';
 import MyPostedBookmarkLikeGif from '../../../../public/images/projects/sikstagram/sikstagram_mypost_bookmarked_liked.gif';
 import Image from 'next/image';
+import ProjectServiceLinkList from '@/components/lists/ProjectServiceLinkList';
 
 const links = [
   {
@@ -87,18 +88,7 @@ export default function SikstagramPage() {
         </p>
       </FadeIn>
       <FadeIn delay={0.9}>
-        <h2 className={subTitleStyle}>🔗 서비스 링크</h2>
-        <div className="flex mt-2">
-          <ul className="flex flex-col bg-gray-100 rounded-xl p-4">
-            {links.map(({ url, text, label }) => (
-              <li key={url} className="py-1 flex">
-                <a href={url} target="_blank" aria-label={label} className={linkStyle}>
-                  {text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ProjectServiceLinkList links={links} />
       </FadeIn>
       <FadeIn delay={1.2}>
         <h2 className={subTitleStyle}>🛠️ 사용 기술</h2>
@@ -171,7 +161,6 @@ export default function SikstagramPage() {
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
 const listStyle = 'mt-4 list-disc pl-6';
 const listIndentStyle = 'mt-1 list-disc pl-6 !list-[circle]';
-const linkStyle = 'hover:text-yellow-400 hover:font-bold';
 
 const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
 const previewGifStyle = 'mt-3 mb-8';

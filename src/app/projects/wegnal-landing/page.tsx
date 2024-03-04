@@ -2,6 +2,7 @@
 
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
+import ProjectServiceLinkList from '@/components/lists/ProjectServiceLinkList';
 import React, { useEffect } from 'react';
 
 const links = [
@@ -31,18 +32,7 @@ export default function WegnalLandingPage() {
         </p>
       </FadeIn>
       <FadeIn delay={0.9}>
-        <h2 className={subTitleStyle}>🔗 서비스 링크</h2>
-        <div className="flex mt-2">
-          <ul className="flex flex-col bg-gray-100 rounded-xl p-4">
-            {links.map(({ url, text, label }) => (
-              <li key={url} className="py-1 flex">
-                <a href={url} target="_blank" aria-label={label} className={linkStyle}>
-                  {text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ProjectServiceLinkList links={links} />
       </FadeIn>
       <FadeIn delay={1.2}>
         <h2 className={subTitleStyle}>🛠️ 사용 기술</h2>
@@ -90,4 +80,3 @@ export default function WegnalLandingPage() {
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
 const listStyle = 'mt-4 list-disc pl-6';
 const listIndentStyle = 'mt-1 list-disc pl-6 !list-[circle]';
-const linkStyle = 'hover:text-yellow-400 hover:font-bold';
