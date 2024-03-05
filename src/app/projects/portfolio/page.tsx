@@ -12,6 +12,7 @@ import MultiCarouselBtnGif from '../../../../public/images/projects/portfolio/po
 import MultiCarouselDragGif from '../../../../public/images/projects/portfolio/portfolio-multi-carousel-drag.gif';
 import Image from 'next/image';
 import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
+import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
 
 const links = [
   {
@@ -69,14 +70,7 @@ export default function PortFolioPage() {
         <ProjectServiceLinkList links={links} />
       </FadeIn>
       <FadeIn delay={1.2}>
-        <h2 className={subTitleStyle}>🛠️ 사용 기술</h2>
-        <div className="w-full flex gap-2 flex-wrap mt-2">
-          {skills.map((skill) => (
-            <p key={skill} className="py-1 px-2 bg-gray-200 rounded-md text-purple-600 font-bold">
-              {skill}
-            </p>
-          ))}
-        </div>
+        <ProjectUseSkillSection skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
         <h2 className={subTitleStyle}>💻 작업 내용</h2>

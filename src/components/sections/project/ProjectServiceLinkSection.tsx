@@ -9,7 +9,7 @@ const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
 
 export default function ProjectServiceLinkSection({ links }: Props) {
   return (
-    <>
+    <section>
       <h2 className={subTitleStyle}>🔗 서비스 링크</h2>
       <div className="flex mt-2">
         <ul className="flex flex-col bg-gray-100 rounded-xl p-4">
@@ -22,6 +22,6 @@ export default function ProjectServiceLinkSection({ links }: Props) {
           ))}
         </ul>
       </div>
-    </>
+    </section>
   );
 }
