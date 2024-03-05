@@ -11,7 +11,7 @@ import ScrollHighlightGif from '../../../../public/images/projects/portfolio/por
 import MultiCarouselBtnGif from '../../../../public/images/projects/portfolio/portfolio-multi-carousel-btn.gif';
 import MultiCarouselDragGif from '../../../../public/images/projects/portfolio/portfolio-multi-carousel-drag.gif';
 import Image from 'next/image';
-import ProjectServiceLinkList from '@/components/lists/ProjectServiceLinkList';
+import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 
 const links = [
   {

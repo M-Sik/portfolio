@@ -2,7 +2,7 @@
 
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
-import ProjectServiceLinkList from '@/components/lists/ProjectServiceLinkList';
+import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 import React, { useEffect } from 'react';
 
 const links = [

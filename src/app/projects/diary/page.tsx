@@ -9,7 +9,7 @@ import AddPostGif from '../../../../public/images/projects/diary/diary_add_diary
 import UpdatePostGif from '../../../../public/images/projects/diary/diary_update_diary.gif';
 import DeleteGif from '../../../../public/images/projects/diary/diary_delete_diary.gif';
 import Image from 'next/image';
-import ProjectServiceLinkList from '@/components/lists/ProjectServiceLinkList';
+import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 
 const links = [
   {

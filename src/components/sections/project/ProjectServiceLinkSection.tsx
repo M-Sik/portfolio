@@ -7,7 +7,7 @@ type Props = {
 const linkStyle = 'hover:text-yellow-400 hover:font-bold';
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
 
-export default function ProjectServiceLinkList({ links }: Props) {
+export default function ProjectServiceLinkSection({ links }: Props) {
   return (
     <>
       <h2 className={subTitleStyle}>🔗 서비스 링크</h2>

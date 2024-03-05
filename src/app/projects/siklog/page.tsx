@@ -8,7 +8,7 @@ import HomeImg from '../../../../public/images/projects/siklog/siklog_home.png';
 import PostDetailImg from '../../../../public/images/projects/siklog/siklog_post_detail.png';
 import SearchPostImg from '../../../../public/images/projects/siklog/siklog_search_post.png';
 import Image from 'next/image';
-import ProjectServiceLinkList from '@/components/lists/ProjectServiceLinkList';
+import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 
 const links = [
   {

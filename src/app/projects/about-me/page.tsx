@@ -5,7 +5,7 @@ import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
 import React, { useEffect } from 'react';
 import Image from 'next/image';
-import ProjectServiceLinkList from '@/components/lists/ProjectServiceLinkList';
+import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 
 const links = [
   {
