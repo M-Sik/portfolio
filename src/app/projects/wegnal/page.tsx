@@ -2,6 +2,7 @@
 
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
+import ProjectRoleSection from '@/components/sections/project/ProjectRoleSection';
 import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
 import React, { useEffect } from 'react';
@@ -24,6 +25,7 @@ const links = [
   },
 ];
 const skills = ['Vue.js', 'Typescript', 'Scss', 'Vuex', 'Vuetify', 'Git', 'Github'];
+const roles = ['프론트엔드 개발'];
 
 export default function WegnalPage() {
   useEffect(() => {
@@ -50,10 +52,7 @@ export default function WegnalPage() {
         <ProjectUseSkillSection skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
-        <h2 className={subTitleStyle}>🙋🏻‍♂️ 담당 역할</h2>
-        <ul className={listStyle}>
-          <li className=" ">프론트엔드 개발</li>
-        </ul>
+        <ProjectRoleSection roles={roles} />
       </FadeIn>
       <FadeIn delay={1.8}>
         <h2 className={subTitleStyle}>💻 담당 업무</h2>
