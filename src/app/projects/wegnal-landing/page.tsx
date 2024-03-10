@@ -2,8 +2,10 @@
 
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
+import ProjectRoleSection from '@/components/sections/project/ProjectRoleSection';
 import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
+import ProjectWorkDetailSection from '@/components/sections/project/ProjectWorkDetailSection';
 import React, { useEffect } from 'react';
 
 const links = [
@@ -14,6 +16,13 @@ const links = [
   },
 ];
 const skills = ['Next.js 13', 'React.js', 'Typescript', 'Scss', 'Tailwindcss', 'Git', 'Github'];
+const roles = ['프론트엔드 개발'];
+const workDetails = [
+  { content: 'SEO 최적화', contentDetails: ['Robots.txt, Sitemap, Metadata, Semantic Tag'] },
+  { content: 'Responsive UI 구현', contentDetails: [] },
+  { content: 'User Agent를 활용하여 앱 다운로드 링크 변경', contentDetails: [] },
+  { content: 'Gsap를 이용한 애니메이션 구현', contentDetails: [] },
+];
 
 export default function WegnalLandingPage() {
   useEffect(() => {
@@ -39,28 +48,10 @@ export default function WegnalLandingPage() {
         <ProjectUseSkillSection skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
-        <h2 className={subTitleStyle}>🙋🏻‍♂️ 담당 역할</h2>
-        <ul className={listStyle}>
-          <li className=" ">프론트엔드 개발</li>
-        </ul>
+        <ProjectRoleSection roles={roles} />
       </FadeIn>
       <FadeIn delay={1.8}>
-        <h2 className={subTitleStyle}>💻 담당 업무</h2>
-        <ul className={listStyle}>
-          <li>SEO 최적화</li>
-          <ul className={listIndentStyle}>
-            <li>Robots.txt, Sitemap, Metadata, Semantic Tag</li>
-          </ul>
-        </ul>
-        <ul className={listStyle}>
-          <li>Responsive UI 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>User Agent를 활용하여 앱 다운로드 링크 변경</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>Gsap를 이용한 애니메이션 구현</li>
-        </ul>
+        <ProjectWorkDetailSection title="💻 담당 업무" workDetails={workDetails} />
       </FadeIn>
       <FadeIn delay={2.1}>
         <h2 className={subTitleStyle}>👨‍👨‍👦 참가 인원</h2>
@@ -73,4 +64,3 @@ export default function WegnalLandingPage() {
 }
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
 const listStyle = 'mt-4 list-disc pl-6';
-const listIndentStyle = 'mt-1 list-disc pl-6 !list-[circle]';
