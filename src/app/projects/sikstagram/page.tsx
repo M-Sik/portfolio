@@ -15,6 +15,7 @@ import Image from 'next/image';
 import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
 import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
+import ProjectWorkDetailSection from '@/components/sections/project/ProjectWorkDetailSection';
 
 const links = [
   {
@@ -29,6 +30,29 @@ const links = [
   },
 ];
 const skills = ['Next.js 13', 'React.js 18', 'Typescript', 'Swr', 'Tailwindcss', 'Git', 'Github'];
+const workDetails = [
+  {
+    content: 'Lighthouse를 이용한 웹 성능 및 웹 접근성 검사',
+    contentDetails: [],
+  },
+  { content: 'Sanity를 이용한 서버 데이터 관리', contentDetails: [] },
+  {
+    content: '회원 관련 기능 구현',
+    contentDetails: [
+      'OAuth 로그인(구글, 카카오), Next Meddleware를 이용한 User Session에 따른 처리, 마이페이지',
+    ],
+  },
+  {
+    content: '게시글 관련 기능 구현',
+    contentDetails: ['게시글 작성•조회, 좋아요, 북마크, 댓글 작성'],
+  },
+  {
+    content: '기타 기능 구현',
+    contentDetails: [
+      'File Drag and Drop, Swr을 이용한 데이터 동기화, 유저 팔로우•언팔로우, 사용자 검색',
+    ],
+  },
+];
 const previews = [
   {
     title: 'OAuth 로그인 👇👇',
@@ -96,36 +120,7 @@ export default function SikstagramPage() {
         <ProjectUseSkillSection skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
-        <h2 className={subTitleStyle}>💻 작업 내용</h2>
-        <ul className={listStyle}>
-          <li>Lighthouse를 이용한 웹 성능 및 웹 접근성 검사</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>Sanity를 이용한 서버 데이터 관리</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>회원 관련 기능 구현</li>
-          <ul className={listIndentStyle}>
-            <li>
-              OAuth 로그인(구글, 카카오), Next Meddleware를 이용한 User Session에 따른 처리,
-              마이페이지
-            </li>
-          </ul>
-        </ul>
-        <ul className={listStyle}>
-          <li>게시글 관련 기능 구현</li>
-          <ul className={listIndentStyle}>
-            <li>게시글 작성•조회, 좋아요, 북마크, 댓글 작성</li>
-          </ul>
-        </ul>
-        <ul className={listStyle}>
-          <li>기타 기능 구현</li>
-          <ul className={listIndentStyle}>
-            <li>
-              File Drag and Drop, Swr을 이용한 데이터 동기화, 유저 팔로우•언팔로우, 사용자 검색
-            </li>
-          </ul>
-        </ul>
+        <ProjectWorkDetailSection title="💻 작업 내용" workDetails={workDetails} />
       </FadeIn>
       <FadeIn delay={1.8}>
         <ProjectNumberOfPeopleSection content="개인 프로젝트" />
@@ -151,8 +146,6 @@ export default function SikstagramPage() {
 }
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-const listStyle = 'mt-4 list-disc pl-6';
-const listIndentStyle = 'mt-1 list-disc pl-6 !list-[circle]';
 
 const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
 const previewGifStyle = 'mt-3 mb-8';

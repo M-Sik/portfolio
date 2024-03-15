@@ -12,6 +12,7 @@ import Image from 'next/image';
 import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
 import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
+import ProjectWorkDetailSection from '@/components/sections/project/ProjectWorkDetailSection';
 
 const links = [
   {
@@ -26,7 +27,20 @@ const links = [
   },
 ];
 const skills = ['React.js 18', 'Typescript', 'Zustand', 'Scss', 'Git', 'Github'];
-
+const workDetails = [
+  {
+    content: '함수형 컴포넌트 기반의 반응형 UI 구현',
+    contentDetails: [],
+  },
+  {
+    content: 'Zustand와 LocalStorage를 이용한 데이터 관리',
+    contentDetails: [],
+  },
+  {
+    content: '다이어리 조회, 생성, 수정, 삭제',
+    contentDetails: [],
+  },
+];
 const previews = [
   {
     title: '메인화면 타이핑 효과 👇👇',
@@ -76,16 +90,7 @@ export default function DiaryPage() {
         <ProjectUseSkillSection skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
-        <h2 className={subTitleStyle}>💻 작업 내용</h2>
-        <ul className={listStyle}>
-          <li>함수형 컴포넌트 기반의 반응형 UI 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>Zustand와 LocalStorage를 이용한 데이터 관리</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>다이어리 조회, 생성, 수정, 삭제</li>
-        </ul>
+        <ProjectWorkDetailSection title="💻 작업 내용" workDetails={workDetails} />
       </FadeIn>
       <FadeIn delay={1.8}>
         <ProjectNumberOfPeopleSection content="개인 프로젝트" />
@@ -111,7 +116,6 @@ export default function DiaryPage() {
 }
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-const listStyle = 'mt-4 list-disc pl-6';
 
 const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
 const previewGifStyle = 'mt-3 mb-8';
