@@ -11,6 +11,7 @@ import DeleteGif from '../../../../public/images/projects/diary/diary_delete_dia
 import Image from 'next/image';
 import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
+import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
 
 const links = [
   {
@@ -87,10 +88,7 @@ export default function DiaryPage() {
         </ul>
       </FadeIn>
       <FadeIn delay={1.8}>
-        <h2 className={subTitleStyle}>👨‍👨‍👦 참가 인원</h2>
-        <ul className={listStyle}>
-          <li>개인 프로젝트</li>
-        </ul>
+        <ProjectNumberOfPeopleSection content="개인 프로젝트" />
       </FadeIn>
       <BottomToTopFadeIn delay={0}>
         <h2 className={subTitleStyle}>📺 미리 보기</h2>

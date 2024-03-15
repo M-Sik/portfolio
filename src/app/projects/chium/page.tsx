@@ -2,6 +2,7 @@
 
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
+import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
 import ProjectRoleSection from '@/components/sections/project/ProjectRoleSection';
 import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
@@ -92,13 +93,7 @@ export default function ChiumPage() {
         </ul>
       </FadeIn>
       <FadeIn delay={2.1}>
-        <h2 className={subTitleStyle}>👨‍👨‍👦 참가 인원</h2>
-        <ul className={listStyle}>
-          <li>
-            Front-End 2명, Back-End 2명{' '}
-            <span className="font-bold">(참여율 Front-End 기준 70%)</span>
-          </li>
-        </ul>
+        <ProjectNumberOfPeopleSection content="Front-End 2명, Back-End 2명 (참여율 Front-End 기준 70%)" />
       </FadeIn>
     </section>
   );
