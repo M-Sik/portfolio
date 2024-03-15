@@ -10,6 +10,8 @@ import SearchPostImg from '../../../../public/images/projects/siklog/siklog_sear
 import Image from 'next/image';
 import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
+import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
+import ProjectWorkDetailSection from '@/components/sections/project/ProjectWorkDetailSection';
 
 const links = [
   {
@@ -33,7 +35,33 @@ const skills = [
   'Git',
   'Github',
 ];
-
+const workDetails = [
+  {
+    content: 'Lighthouse를 이용한 웹 성능 및 웹 접근성 검사',
+    contentDetails: [],
+  },
+  {
+    content: 'SEO 최적화',
+    contentDetails: [
+      '정적 sitemap, 동적 sitemap 작성',
+      '페이지별 meta 태그 작성',
+      'semantic 태그 작성',
+    ],
+  },
+  {
+    content:
+      'AWS ec2, pm2, nginx를 이용한 호스팅과 code pipeline, code deploy를 이용한 배포 자동화를 통하여 운영중이었으나 비용 문제로 인해 호스팅 서비스를 Vercel로 변경',
+    contentDetails: [],
+  },
+  {
+    content: 'Markdown Editor를 이용한 게시글 작성',
+    contentDetails: [],
+  },
+  {
+    content: 'Markdown Viewer를 이용한 게시글 상세 조회',
+    contentDetails: [],
+  },
+];
 const previews = [
   {
     title: 'Home 화면 👇👇',
@@ -142,36 +170,10 @@ export default function SiklogPage() {
         <ProjectUseSkillSection skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
-        <h2 className={subTitleStyle}>💻 작업 내용</h2>
-        <ul className={listStyle}>
-          <li>Lighthouse를 이용한 웹 성능 및 웹 접근성 측정</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>SEO 최적화</li>
-          <ul className={listIndentStyle}>
-            <li>정적 sitemap, 동적 sitemap 작성</li>
-            <li>페이지별 meta 태그 작성</li>
-            <li>SSR을 이용한 pre-render</li>
-          </ul>
-        </ul>
-        <ul className={listStyle}>
-          <li>AWS ec2, pm2, nginx를 이용한 호스팅</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>AWS code pipeline, code deploy를 이용한 배포 자동화</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>Markdown Editor를 이용한 게시글 작성</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>Markdown Viewer를 이용한 게시글 상세 조회</li>
-        </ul>
+        <ProjectWorkDetailSection title="💻 작업 내용" workDetails={workDetails} />
       </FadeIn>
       <FadeIn delay={1.8}>
-        <h2 className={subTitleStyle}>👨‍👨‍👦 참가 인원</h2>
-        <ul className={listStyle}>
-          <li>개인 프로젝트</li>
-        </ul>
+        <ProjectNumberOfPeopleSection content="개인 프로젝트" />
       </FadeIn>
       <BottomToTopFadeIn delay={0}>
         <h2 className={subTitleStyle}>📺 미리 보기</h2>

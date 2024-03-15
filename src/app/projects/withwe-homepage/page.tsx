@@ -2,6 +2,7 @@
 
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
+import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
 import ProjectRoleSection from '@/components/sections/project/ProjectRoleSection';
 import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
@@ -64,13 +65,8 @@ export default function WithweHomePage() {
         <ProjectWorkDetailSection title="💻 담당 업무" workDetails={workDetails} />
       </FadeIn>
       <FadeIn delay={2.1}>
-        <h2 className={subTitleStyle}>👨‍👨‍👦 참가 인원</h2>
-        <ul className={listStyle}>
-          <li>프론트엔드 1명</li>
-        </ul>
+        <ProjectNumberOfPeopleSection content="프론트엔드 1명" />
       </FadeIn>
     </section>
   );
 }
-const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-const listStyle = 'mt-4 list-disc pl-6';

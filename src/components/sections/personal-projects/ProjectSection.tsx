@@ -7,7 +7,6 @@ import SiklogBg from '../../../../public/images/projects/siklog/siklog_home.png'
 import PortfolioBg from '../../../../public/images/projects/portfolio/portfolio_bg.png';
 import SikstagramBg from '../../../../public/images/projects/sikstagram/sikstagram_bg.png';
 import DiaryBg from '../../../../public/images/projects/diary/diary_bg.png';
-import AboutMeBg from '../../../../public/images/projects/about-me/about_me_bg.png';
 
 const projects = [
   {
@@ -46,13 +45,6 @@ const projects = [
     bgImgAlt: 'Diary 배경이미지',
     skills: ['React.js', 'Typescript', 'Zustand', 'Scss', 'Git', 'Github'],
     link: '/projects/diary',
-  },
-  {
-    name: 'About Me',
-    bgImg: AboutMeBg,
-    bgImgAlt: 'About Me 배경이미지',
-    skills: ['React.js', 'Typescript', 'Zustand', 'Scss', 'Git', 'Github'],
-    link: '/projects/about-me',
   },
 ];
 

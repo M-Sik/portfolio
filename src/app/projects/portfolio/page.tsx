@@ -13,6 +13,8 @@ import MultiCarouselDragGif from '../../../../public/images/projects/portfolio/p
 import Image from 'next/image';
 import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
 import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
+import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
+import ProjectWorkDetailSection from '@/components/sections/project/ProjectWorkDetailSection';
 
 const links = [
   {
@@ -27,7 +29,28 @@ const links = [
   },
 ];
 const skills = ['Next.js', 'React.js', 'Typescript', 'Tailwindcss', 'Scss', 'Git', 'Github'];
-
+const workDetails = [
+  {
+    content: 'Lighthouse를 이용한 웹 성능 및 웹 접근성 검사',
+    contentDetails: [],
+  },
+  {
+    content: 'SEO 최적화',
+    contentDetails: [
+      '정적 sitemap, 동적 sitemap 작성',
+      '페이지별 meta 태그 작성',
+      'semantic 태그 작성',
+    ],
+  },
+  {
+    content: 'Responsive UI 구현',
+    contentDetails: [],
+  },
+  {
+    content: 'Gsap를 이용한 애니메이션 구현',
+    contentDetails: [],
+  },
+];
 const previews = [
   {
     title: 'Lighthouse 측정 결과 👇👇',
@@ -73,34 +96,10 @@ export default function PortFolioPage() {
         <ProjectUseSkillSection skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
-        <h2 className={subTitleStyle}>💻 작업 내용</h2>
-        <ul className={listStyle}>
-          <li>Lighthouse를 이용한 웹 성능 및 웹 접근성 검사</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>SEO 최적화</li>
-          <ul className={listIndentStyle}>
-            <li>Robots.txt, Sitemap, Metadata, Semantic Tag</li>
-          </ul>
-        </ul>
-        <ul className={listStyle}>
-          <li>Responsive UI 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>Gsap를 이용한 애니메이션 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>스크롤 위치에 따른 목차 하이라이팅 구현</li>
-        </ul>
-        <ul className={listStyle}>
-          <li>Library를 이용하지 않은 Carousel 구현</li>
-        </ul>
+        <ProjectWorkDetailSection title="💻 작업 내용" workDetails={workDetails} />
       </FadeIn>
       <FadeIn delay={1.8}>
-        <h2 className={subTitleStyle}>👨‍👨‍👦 참가 인원</h2>
-        <ul className={listStyle}>
-          <li>개인 프로젝트</li>
-        </ul>
+        <ProjectNumberOfPeopleSection content="개인 프로젝트" />
       </FadeIn>
       <BottomToTopFadeIn delay={0}>
         <h2 className={subTitleStyle}>📺 미리 보기</h2>
@@ -126,8 +125,6 @@ export default function PortFolioPage() {
 }
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-const listStyle = 'mt-4 list-disc pl-6';
-const listIndentStyle = 'mt-1 list-disc pl-6 !list-[circle]';
 
 const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
 const previewGifStyle = 'mt-3 mb-8';
