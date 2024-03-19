@@ -2,11 +2,11 @@
 
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
-import ProjectNumberOfPeopleSection from '@/components/articles/project/ProjectNumberOfPeopleArticle';
-import ProjectRoleSection from '@/components/articles/project/ProjectRoleArticle';
-import ProjectServiceLinkListSection from '@/components/articles/project/ProjectServiceLinkArticle';
-import ProjectUseSkillSection from '@/components/articles/project/ProjectUseSkillArticle';
-import ProjectWorkDetailSection from '@/components/articles/project/ProjectWorkDetailArticle';
+import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
+import ProjectRoleArticle from '@/components/articles/project/ProjectRoleArticle';
+import ProjectServiceLinkListArticle from '@/components/articles/project/ProjectServiceLinkArticle';
+import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
+import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import React, { useEffect } from 'react';
 
 const links = [
@@ -53,19 +53,19 @@ export default function WithweHomePage() {
         <p className="mt-4">회사를 대표하는 홈페이지이며 Next.js를 활용하여 개발하였습니다.</p>
       </FadeIn>
       <FadeIn delay={0.9}>
-        <ProjectServiceLinkListSection links={links} />
+        <ProjectServiceLinkListArticle links={links} />
       </FadeIn>
       <FadeIn delay={1.2}>
-        <ProjectUseSkillSection skills={skills} />
+        <ProjectUseSkillArticle skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
-        <ProjectRoleSection roles={roles} />
+        <ProjectRoleArticle roles={roles} />
       </FadeIn>
       <FadeIn delay={1.8}>
-        <ProjectWorkDetailSection title="💻 담당 업무" workDetails={workDetails} />
+        <ProjectWorkDetailArticle title="💻 담당 업무" workDetails={workDetails} />
       </FadeIn>
       <FadeIn delay={2.1}>
-        <ProjectNumberOfPeopleSection content="프론트엔드 1명" />
+        <ProjectNumberOfPeopleArticle content="프론트엔드 1명" />
       </FadeIn>
     </section>
   );

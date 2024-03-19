@@ -2,11 +2,11 @@
 
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
-import ProjectNumberOfPeopleSection from '@/components/articles/project/ProjectNumberOfPeopleArticle';
-import ProjectRoleSection from '@/components/articles/project/ProjectRoleArticle';
+import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
+import ProjectRoleArticle from '@/components/articles/project/ProjectRoleArticle';
 import ProjectServiceLinkList from '@/components/articles/project/ProjectServiceLinkArticle';
-import ProjectUseSkillSection from '@/components/articles/project/ProjectUseSkillArticle';
-import ProjectWorkDetailSection from '@/components/articles/project/ProjectWorkDetailArticle';
+import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
+import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import React, { useEffect } from 'react';
 
 const links = [
@@ -92,16 +92,16 @@ export default function WegnalPage() {
         <ProjectServiceLinkList links={links} />
       </FadeIn>
       <FadeIn delay={1.2}>
-        <ProjectUseSkillSection skills={skills} />
+        <ProjectUseSkillArticle skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
-        <ProjectRoleSection roles={roles} />
+        <ProjectRoleArticle roles={roles} />
       </FadeIn>
       <FadeIn delay={1.8}>
-        <ProjectWorkDetailSection title="💻 담당 업무" workDetails={workDetails} />
+        <ProjectWorkDetailArticle title="💻 담당 업무" workDetails={workDetails} />
       </FadeIn>
       <FadeIn delay={2.1}>
-        <ProjectNumberOfPeopleSection content="프론트엔드 1명, 백엔드 1명" />
+        <ProjectNumberOfPeopleArticle content="프론트엔드 1명, 백엔드 1명" />
       </FadeIn>
     </section>
   );

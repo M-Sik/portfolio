@@ -13,9 +13,9 @@ import FollowUserInfoGif from '../../../../public/images/projects/sikstagram/sik
 import MyPostedBookmarkLikeGif from '../../../../public/images/projects/sikstagram/sikstagram_mypost_bookmarked_liked.gif';
 import Image from 'next/image';
 import ProjectServiceLinkList from '@/components/articles/project/ProjectServiceLinkArticle';
-import ProjectUseSkillSection from '@/components/articles/project/ProjectUseSkillArticle';
-import ProjectNumberOfPeopleSection from '@/components/articles/project/ProjectNumberOfPeopleArticle';
-import ProjectWorkDetailSection from '@/components/articles/project/ProjectWorkDetailArticle';
+import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
+import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
+import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 
 const links = [
   {
@@ -117,13 +117,13 @@ export default function SikstagramPage() {
         <ProjectServiceLinkList links={links} />
       </FadeIn>
       <FadeIn delay={1.2}>
-        <ProjectUseSkillSection skills={skills} />
+        <ProjectUseSkillArticle skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
-        <ProjectWorkDetailSection title="💻 작업 내용" workDetails={workDetails} />
+        <ProjectWorkDetailArticle title="💻 작업 내용" workDetails={workDetails} />
       </FadeIn>
       <FadeIn delay={1.8}>
-        <ProjectNumberOfPeopleSection content="개인 프로젝트" />
+        <ProjectNumberOfPeopleArticle content="개인 프로젝트" />
       </FadeIn>
       <BottomToTopFadeIn delay={0}>
         <h2 className={subTitleStyle}>📺 미리 보기</h2>
