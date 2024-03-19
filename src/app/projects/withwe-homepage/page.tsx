@@ -8,6 +8,7 @@ import ProjectServiceLinkListArticle from '@/components/articles/project/Project
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import React, { useEffect } from 'react';
+import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
 
 const links = [
   {
@@ -45,12 +46,10 @@ export default function WithweHomePage() {
   return (
     <section className="w-full">
       <FadeIn delay={0.3}>
-        <Underline delay={0.5} duration={2} color="rgb(248, 205, 7)" className="w-full block">
-          <h1 className=" text-4xl font-bold">Withwe 회사 홈페이지</h1>
-        </Underline>
-      </FadeIn>
-      <FadeIn delay={0.6}>
-        <p className="mt-4">회사를 대표하는 홈페이지이며 Next.js를 활용하여 개발하였습니다.</p>
+        <ProjectIntroductArticle
+          content="회사를 대표하는 홈페이지이며 Next.js를 활용하여 개발하였습니다."
+          projectName="Withwe 회사 홈페이지"
+        />
       </FadeIn>
       <FadeIn delay={0.9}>
         <ProjectServiceLinkListArticle links={links} />
