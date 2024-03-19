@@ -2,11 +2,11 @@
 
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
-import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
-import ProjectRoleSection from '@/components/sections/project/ProjectRoleSection';
-import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
-import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
-import ProjectWorkDetailSection from '@/components/sections/project/ProjectWorkDetailSection';
+import ProjectNumberOfPeopleSection from '@/components/articles/project/ProjectNumberOfPeopleArticle';
+import ProjectRoleSection from '@/components/articles/project/ProjectRoleArticle';
+import ProjectServiceLinkList from '@/components/articles/project/ProjectServiceLinkArticle';
+import ProjectUseSkillSection from '@/components/articles/project/ProjectUseSkillArticle';
+import ProjectWorkDetailSection from '@/components/articles/project/ProjectWorkDetailArticle';
 import React, { useEffect } from 'react';
 
 const links = [

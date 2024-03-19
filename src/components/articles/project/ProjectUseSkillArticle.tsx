@@ -5,9 +5,9 @@ type Props = {
 };
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
 
-export default function ProjectUseSkillSection({ skills }: Props) {
+export default function ProjectUseSkillArticle({ skills }: Props) {
   return (
-    <section>
+    <article>
       <h2 className={subTitleStyle}>🛠️ 사용 기술</h2>
       <div className="w-full flex gap-2 flex-wrap mt-2">
         {skills.map((skill) => (
@@ -16,6 +16,6 @@ export default function ProjectUseSkillSection({ skills }: Props) {
           </p>
         ))}
       </div>
-    </section>
+    </article>
   );
 }

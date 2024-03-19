@@ -12,10 +12,10 @@ import FollowUnfollowGif from '../../../../public/images/projects/sikstagram/sik
 import FollowUserInfoGif from '../../../../public/images/projects/sikstagram/sikstagram_followuser_info.gif';
 import MyPostedBookmarkLikeGif from '../../../../public/images/projects/sikstagram/sikstagram_mypost_bookmarked_liked.gif';
 import Image from 'next/image';
-import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
-import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
-import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
-import ProjectWorkDetailSection from '@/components/sections/project/ProjectWorkDetailSection';
+import ProjectServiceLinkList from '@/components/articles/project/ProjectServiceLinkArticle';
+import ProjectUseSkillSection from '@/components/articles/project/ProjectUseSkillArticle';
+import ProjectNumberOfPeopleSection from '@/components/articles/project/ProjectNumberOfPeopleArticle';
+import ProjectWorkDetailSection from '@/components/articles/project/ProjectWorkDetailArticle';
 
 const links = [
   {

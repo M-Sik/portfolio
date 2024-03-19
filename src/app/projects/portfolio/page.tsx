@@ -11,10 +11,10 @@ import ScrollHighlightGif from '../../../../public/images/projects/portfolio/por
 import MultiCarouselBtnGif from '../../../../public/images/projects/portfolio/portfolio-multi-carousel-btn.gif';
 import MultiCarouselDragGif from '../../../../public/images/projects/portfolio/portfolio-multi-carousel-drag.gif';
 import Image from 'next/image';
-import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
-import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
-import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
-import ProjectWorkDetailSection from '@/components/sections/project/ProjectWorkDetailSection';
+import ProjectServiceLinkList from '@/components/articles/project/ProjectServiceLinkArticle';
+import ProjectUseSkillSection from '@/components/articles/project/ProjectUseSkillArticle';
+import ProjectNumberOfPeopleSection from '@/components/articles/project/ProjectNumberOfPeopleArticle';
+import ProjectWorkDetailSection from '@/components/articles/project/ProjectWorkDetailArticle';
 
 const links = [
   {
