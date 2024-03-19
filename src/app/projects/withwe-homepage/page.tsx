@@ -2,12 +2,13 @@
 
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
-import ProjectNumberOfPeopleSection from '@/components/sections/project/ProjectNumberOfPeopleSection';
-import ProjectRoleSection from '@/components/sections/project/ProjectRoleSection';
-import ProjectServiceLinkList from '@/components/sections/project/ProjectServiceLinkSection';
-import ProjectUseSkillSection from '@/components/sections/project/ProjectUseSkillSection';
-import ProjectWorkDetailSection from '@/components/sections/project/ProjectWorkDetailSection';
+import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
+import ProjectRoleArticle from '@/components/articles/project/ProjectRoleArticle';
+import ProjectServiceLinkListArticle from '@/components/articles/project/ProjectServiceLinkArticle';
+import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
+import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import React, { useEffect } from 'react';
+import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
 
 const links = [
   {
@@ -45,27 +46,25 @@ export default function WithweHomePage() {
   return (
     <section className="w-full">
       <FadeIn delay={0.3}>
-        <Underline delay={0.5} duration={2} color="rgb(248, 205, 7)" className="w-full block">
-          <h1 className=" text-4xl font-bold">Withwe 회사 홈페이지</h1>
-        </Underline>
-      </FadeIn>
-      <FadeIn delay={0.6}>
-        <p className="mt-4">회사를 대표하는 홈페이지이며 Next.js를 활용하여 개발하였습니다.</p>
+        <ProjectIntroductArticle
+          content="회사를 대표하는 홈페이지이며 Next.js를 활용하여 개발하였습니다."
+          projectName="Withwe 회사 홈페이지"
+        />
       </FadeIn>
       <FadeIn delay={0.9}>
-        <ProjectServiceLinkList links={links} />
+        <ProjectServiceLinkListArticle links={links} />
       </FadeIn>
       <FadeIn delay={1.2}>
-        <ProjectUseSkillSection skills={skills} />
+        <ProjectUseSkillArticle skills={skills} />
       </FadeIn>
       <FadeIn delay={1.5}>
-        <ProjectRoleSection roles={roles} />
+        <ProjectRoleArticle roles={roles} />
       </FadeIn>
       <FadeIn delay={1.8}>
-        <ProjectWorkDetailSection title="💻 담당 업무" workDetails={workDetails} />
+        <ProjectWorkDetailArticle title="💻 담당 업무" workDetails={workDetails} />
       </FadeIn>
       <FadeIn delay={2.1}>
-        <ProjectNumberOfPeopleSection content="프론트엔드 1명" />
+        <ProjectNumberOfPeopleArticle content="프론트엔드 1명" />
       </FadeIn>
     </section>
   );
