@@ -13,6 +13,7 @@ import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkil
 import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
+import ProjectPreviewArticle from '@/components/articles/project/ProjectPreviewArticle';
 
 const introducts = [
   {
@@ -142,29 +143,8 @@ export default function SiklogPage() {
         <ProjectNumberOfPeopleArticle content="개인 프로젝트" />
       </FadeIn>
       <BottomToTopFadeIn delay={0}>
-        <h2 className={subTitleStyle}>📺 미리 보기</h2>
+        <ProjectPreviewArticle title="📺 미리 보기" previews={previews} />
       </BottomToTopFadeIn>
-
-      {previews.map(({ title, gifSrc, alt }, index) => (
-        <BottomToTopFadeIn key={title} delay={0.3} className=" relative">
-          <h3 className={previewTitleStyle}>{title}</h3>
-          {gifSrc.map((src, index) => (
-            <Image
-              key={index}
-              src={src}
-              alt={alt}
-              className={previewGifStyle}
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8f5WhHgAHBAJV9F76jAAAAABJRU5ErkJggg=="
-            />
-          ))}
-        </BottomToTopFadeIn>
-      ))}
     </section>
   );
 }
-
-const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-
-const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
-const previewGifStyle = 'mt-3 mb-8';

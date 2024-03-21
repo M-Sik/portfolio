@@ -10,11 +10,11 @@ import GsapFullGif from '../../../../public/images/projects/portfolio/portfolio-
 import ScrollHighlightGif from '../../../../public/images/projects/portfolio/portfolio-scroll-highlight.gif';
 import MultiCarouselBtnGif from '../../../../public/images/projects/portfolio/portfolio-multi-carousel-btn.gif';
 import MultiCarouselDragGif from '../../../../public/images/projects/portfolio/portfolio-multi-carousel-drag.gif';
-import Image from 'next/image';
 import ProjectServiceLinkList from '@/components/articles/project/ProjectServiceLinkArticle';
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
+import ProjectPreviewArticle from '@/components/articles/project/ProjectPreviewArticle';
 
 const links = [
   {
@@ -102,29 +102,8 @@ export default function PortFolioPage() {
         <ProjectNumberOfPeopleArticle content="개인 프로젝트" />
       </FadeIn>
       <BottomToTopFadeIn delay={0}>
-        <h2 className={subTitleStyle}>📺 미리 보기</h2>
+        <ProjectPreviewArticle title="📺 미리 보기" previews={previews} />
       </BottomToTopFadeIn>
-
-      {previews.map(({ title, gifSrc, alt }, index) => (
-        <BottomToTopFadeIn key={title} delay={0.3} className=" relative">
-          <h3 className={previewTitleStyle}>{title}</h3>
-          {gifSrc.map((src, index) => (
-            <Image
-              key={index}
-              src={src}
-              alt={alt}
-              className={previewGifStyle}
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8f5WhHgAHBAJV9F76jAAAAABJRU5ErkJggg=="
-            />
-          ))}
-        </BottomToTopFadeIn>
-      ))}
     </section>
   );
 }
-
-const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-
-const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
-const previewGifStyle = 'mt-3 mb-8';

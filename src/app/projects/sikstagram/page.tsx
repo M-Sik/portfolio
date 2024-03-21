@@ -16,6 +16,7 @@ import ProjectServiceLinkList from '@/components/articles/project/ProjectService
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
+import ProjectPreviewArticle from '@/components/articles/project/ProjectPreviewArticle';
 
 const links = [
   {
@@ -56,37 +57,37 @@ const workDetails = [
 const previews = [
   {
     title: 'OAuth 로그인 👇👇',
-    gifSrc: OAtuhGif,
+    gifSrc: [OAtuhGif],
     alt: 'oauth login gif',
   },
   {
     title: '게시글 등록 👇👇',
-    gifSrc: AddPostGif,
+    gifSrc: [AddPostGif],
     alt: '게시글 등록 gif',
   },
   {
     title: '게시글 및 게시글 상세화면 좋아요, 북마크, 댓글 작성 👇👇',
-    gifSrc: LikeBookmarkCommentGif,
+    gifSrc: [LikeBookmarkCommentGif],
     alt: '게시글 및 게시글 상세화면 좋아요, 북마크, 댓글 작성 gif',
   },
   {
     title: 'Debounce를 이용한 유저 검색 👇👇',
-    gifSrc: SearchUserGif,
+    gifSrc: [SearchUserGif],
     alt: 'Debounce를 이용한 유저 검색 gif',
   },
   {
     title: '유저 팔로우, 언팔로우 👇👇',
-    gifSrc: FollowUnfollowGif,
+    gifSrc: [FollowUnfollowGif],
     alt: '유저 팔로우, 언팔로우 gif',
   },
   {
     title: '팔로우한 유저 정보보기 👇👇',
-    gifSrc: FollowUserInfoGif,
+    gifSrc: [FollowUserInfoGif],
     alt: '팔로우한 유저 정보보기 gif',
   },
   {
     title: '해당 유저가 쓴 게시글, 북마크한 글, 좋아요한 글 조회 👇👇',
-    gifSrc: MyPostedBookmarkLikeGif,
+    gifSrc: [MyPostedBookmarkLikeGif],
     alt: '해당 유저가 쓴 게시글, 북마크한 글, 좋아요한 글 조회 gif',
   },
 ];
@@ -126,26 +127,8 @@ export default function SikstagramPage() {
         <ProjectNumberOfPeopleArticle content="개인 프로젝트" />
       </FadeIn>
       <BottomToTopFadeIn delay={0}>
-        <h2 className={subTitleStyle}>📺 미리 보기</h2>
+        <ProjectPreviewArticle title="📺 미리 보기" previews={previews} />
       </BottomToTopFadeIn>
-
-      {previews.map(({ title, gifSrc, alt }) => (
-        <BottomToTopFadeIn key={title} delay={0.3}>
-          <h3 className={previewTitleStyle}>{title}</h3>
-          <Image
-            src={gifSrc}
-            alt={alt}
-            className={previewGifStyle}
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8f5WhHgAHBAJV9F76jAAAAABJRU5ErkJggg=="
-          />
-        </BottomToTopFadeIn>
-      ))}
     </section>
   );
 }
-
-const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-
-const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
-const previewGifStyle = 'mt-3 mb-8';
