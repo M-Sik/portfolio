@@ -13,6 +13,7 @@ import ProjectServiceLinkList from '@/components/articles/project/ProjectService
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
+import ProjectPreviewArticle from '@/components/articles/project/ProjectPreviewArticle';
 
 const links = [
   {
@@ -44,22 +45,22 @@ const workDetails = [
 const previews = [
   {
     title: '메인화면 타이핑 효과 👇👇',
-    gifSrc: MainPageGif,
+    gifSrc: [MainPageGif],
     alt: 'main page gif',
   },
   {
     title: '다이어리 작성 👇👇',
-    gifSrc: AddPostGif,
+    gifSrc: [AddPostGif],
     alt: '다이어리 등록 gif',
   },
   {
     title: '다이어리 수정 👇👇',
-    gifSrc: UpdatePostGif,
+    gifSrc: [UpdatePostGif],
     alt: '다이어리 수정 gif',
   },
   {
     title: '다이어리 삭제 👇👇',
-    gifSrc: DeleteGif,
+    gifSrc: [DeleteGif],
     alt: '다이어리 삭제 gif',
   },
 ];
@@ -96,26 +97,8 @@ export default function DiaryPage() {
         <ProjectNumberOfPeopleArticle content="개인 프로젝트" />
       </FadeIn>
       <BottomToTopFadeIn delay={0}>
-        <h2 className={subTitleStyle}>📺 미리 보기</h2>
+        <ProjectPreviewArticle title="📺 미리 보기" previews={previews} />
       </BottomToTopFadeIn>
-
-      {previews.map(({ title, gifSrc, alt }, index) => (
-        <BottomToTopFadeIn key={title} delay={0.3} className=" relative">
-          <h3 className={previewTitleStyle}>{title}</h3>
-          <Image
-            src={gifSrc}
-            alt={alt}
-            className={previewGifStyle}
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8f5WhHgAHBAJV9F76jAAAAABJRU5ErkJggg=="
-          />
-        </BottomToTopFadeIn>
-      ))}
     </section>
   );
 }
-
-const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
-
-const previewTitleStyle = 'font-bold text-xl mt-5 animate-c-bounce';
-const previewGifStyle = 'mt-3 mb-8';
