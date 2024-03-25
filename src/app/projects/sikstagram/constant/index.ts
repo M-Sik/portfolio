@@ -10,7 +10,7 @@ export const links = [
   {
     url: 'https://sikstagram.vercel.app',
     label: 'sikstagram web link',
-    text: '👉 웹 보러가기1 👈',
+    text: '👉 웹 보러가기 👈',
   },
   {
     url: 'https://github.com/M-Sik/sikstagram',
