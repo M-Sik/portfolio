@@ -8,22 +8,7 @@ import ProjectServiceLinkList from '@/components/articles/project/ProjectService
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import React, { useEffect } from 'react';
-
-const links = [
-  {
-    url: 'https://wegnal.kr',
-    label: 'wegnal landing web link',
-    text: '👉 웹 보러가기 👈',
-  },
-];
-const skills = ['Next.js 13', 'React.js', 'Typescript', 'Scss', 'Tailwindcss', 'Git', 'Github'];
-const roles = ['프론트엔드 개발'];
-const workDetails = [
-  { content: 'SEO 최적화', contentDetails: ['Robots.txt, Sitemap, Metadata, Semantic Tag'] },
-  { content: 'Responsive UI 구현', contentDetails: [] },
-  { content: 'User Agent를 활용하여 앱 다운로드 링크 변경', contentDetails: [] },
-  { content: 'Gsap를 이용한 애니메이션 구현', contentDetails: [] },
-];
+import { links, roles, skills, workDetails } from './constant/index';
 
 export default function WegnalLandingPage() {
   useEffect(() => {

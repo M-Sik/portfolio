@@ -1,7 +1,6 @@
 # *
 User-agent: *
 Allow: /
-Disallow: /projects/wegnal/
 
 # Host
 Host: https://devsik-portfolio.vercel.app/
