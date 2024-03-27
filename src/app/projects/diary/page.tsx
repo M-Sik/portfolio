@@ -1,9 +1,6 @@
-'use client';
-
 import BottomToTopFadeIn from '@/components/gasp/BottomToTopFadeIn';
 import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
-import React, { useEffect } from 'react';
 import ProjectServiceLinkList from '@/components/articles/project/ProjectServiceLinkArticle';
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
@@ -12,10 +9,6 @@ import ProjectPreviewArticle from '@/components/articles/project/ProjectPreviewA
 import { links, previews, skills, workDetails } from './constant/index';
 
 export default function DiaryPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <section className="w-full">
       <FadeIn delay={0.3}>

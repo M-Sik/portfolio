@@ -1,8 +1,5 @@
-'use client';
-
 import BottomToTopFadeIn from '@/components/gasp/BottomToTopFadeIn';
 import FadeIn from '@/components/gasp/FadeIn';
-import React, { useEffect } from 'react';
 import ProjectServiceLinkList from '@/components/articles/project/ProjectServiceLinkArticle';
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
@@ -12,10 +9,6 @@ import ProjectPreviewArticle from '@/components/articles/project/ProjectPreviewA
 import { introducts, links, previews, skills, workDetails } from './constant/index';
 
 export default function SiklogPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <section className="w-full">
       <FadeIn delay={0.3}>

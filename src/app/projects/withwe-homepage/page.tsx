@@ -1,21 +1,13 @@
-'use client';
-
 import FadeIn from '@/components/gasp/FadeIn';
-import Underline from '@/components/gasp/UnderLine';
 import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
 import ProjectRoleArticle from '@/components/articles/project/ProjectRoleArticle';
 import ProjectServiceLinkListArticle from '@/components/articles/project/ProjectServiceLinkArticle';
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
-import React, { useEffect } from 'react';
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
 import { links, skills, roles, workDetails } from './constant/index';
 
 export default function WithweHomePage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <section className="w-full">
       <FadeIn delay={0.3}>
