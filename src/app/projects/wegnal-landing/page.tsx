@@ -6,10 +6,11 @@ import ProjectServiceLinkList from '@/components/articles/project/ProjectService
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import { links, roles, skills, workDetails } from './constant/index';
+import ScrollTopSection from '@/components/sections/ScrollTopSection';
 
 export default function WegnalLandingPage() {
   return (
-    <section className="w-full">
+    <ScrollTopSection>
       <FadeIn delay={0.3}>
         <Underline delay={0.5} duration={2} color="rgb(248, 205, 7)" className="w-full block">
           <h1 className=" text-4xl font-bold">Wegnal 랜딩 페이지</h1>
@@ -35,6 +36,6 @@ export default function WegnalLandingPage() {
       <FadeIn delay={2.1}>
         <ProjectNumberOfPeopleArticle content="프론트엔드 1명" />
       </FadeIn>
-    </section>
+    </ScrollTopSection>
   );
 }

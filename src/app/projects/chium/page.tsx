@@ -6,10 +6,11 @@ import ProjectServiceLinkList from '@/components/articles/project/ProjectService
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import { links, roles, skills, workDetails } from './constant/index';
+import ScrollTopSection from '@/components/sections/ScrollTopSection';
 
 export default function ChiumPage() {
   return (
-    <section className="w-full">
+    <ScrollTopSection>
       <FadeIn delay={0.3}>
         <Underline delay={0.5} duration={2} color="rgb(248, 205, 7)" className="w-full block">
           <h1 className=" text-4xl font-bold">Chium</h1>
@@ -37,6 +38,6 @@ export default function ChiumPage() {
       <FadeIn delay={2.1}>
         <ProjectNumberOfPeopleArticle content="Front-End 2명, Back-End 2명 (참여율 Front-End 기준 70%)" />
       </FadeIn>
-    </section>
+    </ScrollTopSection>
   );
 }

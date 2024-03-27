@@ -7,10 +7,11 @@ import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectN
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import ProjectPreviewArticle from '@/components/articles/project/ProjectPreviewArticle';
 import { links, previews, skills, workDetails } from './constant/index';
+import ScrollTopSection from '@/components/sections/ScrollTopSection';
 
 export default function PortFolioPage() {
   return (
-    <section className="w-full">
+    <ScrollTopSection>
       <FadeIn delay={0.3}>
         <Underline delay={0.5} duration={2} color="rgb(248, 205, 7)" className="w-full block">
           <h1 className=" text-4xl font-bold">Portfolio</h1>
@@ -34,6 +35,6 @@ export default function PortFolioPage() {
       <BottomToTopFadeIn delay={0}>
         <ProjectPreviewArticle title="📺 미리 보기" previews={previews} />
       </BottomToTopFadeIn>
-    </section>
+    </ScrollTopSection>
   );
 }

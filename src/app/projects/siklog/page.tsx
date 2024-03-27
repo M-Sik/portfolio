@@ -7,10 +7,11 @@ import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkD
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
 import ProjectPreviewArticle from '@/components/articles/project/ProjectPreviewArticle';
 import { introducts, links, previews, skills, workDetails } from './constant/index';
+import ScrollTopSection from '@/components/sections/ScrollTopSection';
 
 export default function SiklogPage() {
   return (
-    <section className="w-full">
+    <ScrollTopSection>
       <FadeIn delay={0.3}>
         <ProjectIntroductArticle
           content={`Next.js의 API Route와 MongoDB를 이용하여 데이터 관리를 하였으며, AWS를 이용하여 호스팅 및
@@ -35,6 +36,6 @@ export default function SiklogPage() {
       <BottomToTopFadeIn delay={0}>
         <ProjectPreviewArticle title="📺 미리 보기" previews={previews} />
       </BottomToTopFadeIn>
-    </section>
+    </ScrollTopSection>
   );
 }
