@@ -21,13 +21,6 @@ const careers = [
         link: '/projects/withwe-homepage',
       },
       {
-        name: 'Wegnal 랜딩 페이지',
-        bgImg: WegnalLandingBg,
-        bgImgAlt: '웨그널 랜딩페이지 배경이미지',
-        skills: ['Next.js 13', 'React.js', 'Typescript', 'Scss', 'Tailwindcss', 'Git', 'Github'],
-        link: '/projects/wegnal-landing',
-      },
-      {
         name: 'Wegnal',
         bgImg: WegnalBg,
         bgImgAlt: '웨그널 배경이미지',
