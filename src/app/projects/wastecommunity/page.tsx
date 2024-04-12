@@ -18,7 +18,8 @@ export default function WastecommunityPage() {
       </FadeIn>
       <FadeIn delay={0.6}>
         <p className="mt-4">
-          Waste Community는 폐기물에 관련된 정보를 공유할 수 있는 커뮤니티 플랫폼 입니다.
+          Waste Community는 폐기물에 관련된 정보를 공유할 수 있는 커뮤니티 플랫폼 입니다. (현재
+          운영중지 상태입니다.)
         </p>
       </FadeIn>
       <FadeIn delay={0.9}>
