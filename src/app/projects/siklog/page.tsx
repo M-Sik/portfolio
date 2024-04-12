@@ -14,8 +14,7 @@ export default function SiklogPage() {
     <ScrollTopSection>
       <FadeIn delay={0.3}>
         <ProjectIntroductArticle
-          content={`Next.js의 API Route와 MongoDB를 이용하여 데이터 관리를 하였으며, AWS를 이용하여 호스팅 및
-          배포 자동화를 진행하였습니다.\n블로그라는 특성상 다른 사용자들에게 노출이 되어야 하기 때문에 어떻게 하면 검색엔진이 읽기 쉬운 블로그를
+          content={`Next.js의 API Route와 MongoDB를 이용하여 데이터 관리를 하였으며, AWS를 이용하여 호스팅 및 배포 자동화를 진행하였으나 나 비용 문제로 인해 호스팅 서비스를 Vercel로 변경하였습니다.\n블로그라는 특성상 다른 사용자들에게 노출이 되어야 하기 때문에 어떻게 하면 검색엔진이 읽기 쉬운 블로그를
           만들 수 있을지를 고민을 하였습니다. SEO에 대해 고민하고 적용한 결과는 아래와 같습니다.`}
           listContents={introducts}
           projectName="Siklog"
