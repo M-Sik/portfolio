@@ -20,7 +20,7 @@ export default function ChiumPage() {
         <p className="mt-4">
           Chium은 폐기물 배출자와 수거업체를 연결해 주는 폐기물 안전처리 서비스 입니다. 배출자와
           수거업체간의 입찰 과정을 통하여 폐기물을 처리하며, 배출자는 가장 저렴한 가격에 폐기물을
-          배출할 수 있습니다.
+          배출할 수 있습니다. WebView를 이용하여 Aos, Ios앱을 배포하였습니다.
         </p>
       </FadeIn>
       <FadeIn delay={0.9}>
