@@ -24,13 +24,24 @@ export const workDetails = [
       '기존에는 Option API를 활용하여 작업하였으나 소스 코드가 많아질수록 연관되어있는 코드가 나누어져있어 로직을 추적하기 어려웠습니다. 이를 해결하기 위해 Composition API를 도입하였습니다.',
     ],
   },
-  { content: 'WebView를 이용한 Aos, Ios 앱 개발', contentDetails: [] },
   {
     content: '초기 로딩속도 향상을 위한 최적화 작업 수행',
     contentDetails: [
       'Bundle 최적화(1.51MB → 1.44MB)',
       'Font 최적화(868KB ⇒ 169KB)',
       'Code Splitting',
+    ],
+  },
+  {
+    content: 'WebView로 사용될 모바일 웹 UI 및 기능 구현',
+    contentDetails: [],
+  },
+  {
+    content: 'Native App과의 통신 기능 구현',
+    contentDetails: [
+      '푸시알림에 따른 처리',
+      '카메라 권한 확인',
+      'Ios App의 WebView의 경우 App 종료시 Local Storage가 초기화 되는 이슈가 발생하였으며, 이를 해결하기위해 Native App 저장소 이용',
     ],
   },
   {

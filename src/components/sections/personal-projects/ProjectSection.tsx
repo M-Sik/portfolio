@@ -6,7 +6,6 @@ import React from 'react';
 import SiklogBg from '../../../../public/images/projects/siklog/siklog_home.png';
 import PortfolioBg from '../../../../public/images/projects/portfolio/portfolio_bg.png';
 import SikstagramBg from '../../../../public/images/projects/sikstagram/sikstagram_bg.png';
-import DiaryBg from '../../../../public/images/projects/diary/diary_bg.png';
 
 const projects = [
   {
@@ -38,13 +37,6 @@ const projects = [
       'Github',
     ],
     link: '/projects/sikstagram',
-  },
-  {
-    name: 'Diary',
-    bgImg: DiaryBg,
-    bgImgAlt: 'Diary 배경이미지',
-    skills: ['React.js', 'Typescript', 'Zustand', 'Scss', 'Git', 'Github'],
-    link: '/projects/diary',
   },
 ];
 

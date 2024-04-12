@@ -19,8 +19,16 @@ export const skills = ['Vue.js', 'Javascript', 'Scss', 'Vuex', 'Vuetify', 'Git',
 export const roles = ['프론트엔드 개발'];
 export const workDetails = [
   {
-    content: 'WebView를 이용한 Aos, Ios 앱 개발',
+    content: 'WebView로 사용될 모바일 웹 UI 및 기능 구현',
     contentDetails: [],
+  },
+  {
+    content: 'Native App과의 통신 기능 구현',
+    contentDetails: [
+      '푸시알림에 따른 처리',
+      '카메라 권한 확인',
+      'Ios App의 WebView의 경우 App 종료시 Local Storage가 초기화 되는 이슈가 발생하였으며, 이를 해결하기위해 Native App 저장소 이용',
+    ],
   },
   {
     content: '아임포트 Module을 이용하여 다날 본인인증 서비스 연동',

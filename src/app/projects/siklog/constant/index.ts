@@ -50,6 +50,7 @@ export const skills = [
   'Next.js',
   'React.js',
   'Typescript',
+  'React Query',
   'Aws',
   'Mongodb',
   'Tailwindcss',
@@ -57,10 +58,6 @@ export const skills = [
   'Github',
 ];
 export const workDetails = [
-  {
-    content: 'Lighthouse를 이용한 웹 성능 및 웹 접근성 검사',
-    contentDetails: [],
-  },
   {
     content: 'SEO 최적화',
     contentDetails: [
@@ -70,8 +67,22 @@ export const workDetails = [
     ],
   },
   {
+    content: 'Next.js에서 제공하는 api route를 이용해 게시글 관련 api구현',
+    contentDetails: [],
+  },
+  {
+    content: 'CSR 방식으로 게시글 목록을 불러오는 페이지에 React Query 적용',
+    contentDetails: [
+      '매번 해당 페이지로 이동할때마다 로딩 UI가 보여 캐싱을 이용해 UX를 향상시키기 위해 React Query 적용',
+    ],
+  },
+  {
     content:
       'AWS ec2, pm2, nginx를 이용한 호스팅과 code pipeline, code deploy를 이용한 배포 자동화를 통하여 운영중이었으나 비용 문제로 인해 호스팅 서비스를 Vercel로 변경',
+    contentDetails: [],
+  },
+  {
+    content: 'Lighthouse를 이용한 웹 성능 및 웹 접근성 검사',
     contentDetails: [],
   },
   {
