@@ -45,6 +45,10 @@ export const workDetails = [
     ],
   },
   {
+    content: '사용자별 인가 처리를 위해 Axios Interceptor를 이용한 Jwt관리',
+    contentDetails: [],
+  },
+  {
     content: '회원 관련 기능 구현',
     contentDetails: ['로그인, 회원가입, 아이디 찾기, 비밀번호 찾기, 마이페이지 정보 관리'],
   },
