@@ -14,6 +14,21 @@ const careers = [
     year: '(2022.11 ~ 재직중)',
     projects: [
       {
+        name: 'Wegnal Business',
+        bgImg: WegnalBg,
+        bgImgAlt: '웨그널 비즈니스 배경이미지',
+        skills: [
+          'React.js',
+          'Typescript',
+          'Zustand',
+          'React Query',
+          'Tailwindcss',
+          'Git',
+          'Github',
+        ],
+        link: '/projects/wegnal-business',
+      },
+      {
         name: 'Withwe 홈페이지',
         bgImg: WithweHomepageBg,
         bgImgAlt: '위드위 홈페이지 배경이미지',
