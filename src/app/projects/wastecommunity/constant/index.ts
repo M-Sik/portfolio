@@ -17,7 +17,15 @@ export const workDetails = [
     ],
   },
   { content: 'Responsive UI 구현', contentDetails: [] },
-  { content: 'Typescript 도입', contentDetails: [] },
+  {
+    content: '아래의 장점을 생각하여 Typescript 도입',
+    contentDetails: [
+      '미리 타입을 지정하여 개발자의 실수를 줄일수 있음',
+      '코드 가독성과 유지보수성 향상',
+      '객체 안의 필드값에 대한 IDE의 리스트 업 기능',
+    ],
+  },
+  { content: '사용자별 인가 처리를 위해 Axios Interceptor를 이용한 Jwt관리', contentDetails: [] },
   {
     content: '회원 관련 기능 구현',
     contentDetails: ['로그인, 회원가입, 비밀번호 찾기, 마이페이지 정보 관리'],
