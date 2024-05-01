@@ -75,6 +75,11 @@ export const workDetails = [
     contentDetails: [],
   },
   {
+    content:
+      'React Query의 useSuspenseInfiniteQuery와 IntersectionObserver를 이용한 무한스크롤 기능 구현',
+    contentDetails: [],
+  },
+  {
     content: 'CSR 방식으로 게시글 목록을 불러오는 페이지에 React Query 적용',
     contentDetails: [
       '매번 해당 페이지로 이동할때마다 로딩 UI가 보여 캐싱을 이용해 UX를 향상시키기 위해 React Query 적용',
