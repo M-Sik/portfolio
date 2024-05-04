@@ -19,6 +19,10 @@ export const skills = ['Vue.js', 'Typescript', 'Scss', 'Vuex', 'Vuetify', 'Git',
 export const roles = ['프론트엔드 개발'];
 export const workDetails = [
   {
+    content: '서비스 신규 개발',
+    contentDetails: [],
+  },
+  {
     content: 'Vue.js Option API에서 Composition API로 Refactoring',
     contentDetails: [
       '기존에는 Option API를 활용하여 작업하였으나 소스 코드가 많아질수록 연관되어있는 코드가 나누어져있어 로직을 추적하기 어려웠습니다. 이를 해결하기 위해 Composition API를 도입하였습니다.',
@@ -37,15 +41,14 @@ export const workDetails = [
     contentDetails: [],
   },
   {
-    content: 'Native App과의 통신 기능 구현',
+    content: 'WebView와 Native App의 통신 기능 구현',
     contentDetails: [
-      '푸시알림에 따른 처리',
-      '카메라 권한 확인',
-      'Ios App의 WebView의 경우 App 종료시 Local Storage가 초기화 되는 이슈가 발생하였으며, 이를 해결하기위해 Native App 저장소 이용',
+      '사용자의 푸시알림 클릭에 따른 처리',
+      'Ios App의 WKWebView의 경우 App 종료시 Web Local Storage가 초기화 되는 이슈가 발생하였으며, 이를 해결하기위해 Native App Storage 이용',
     ],
   },
   {
-    content: '사용자별 인가 처리를 위해 Axios Interceptor를 이용한 Jwt관리',
+    content: '사용자별 인증 및 인가 처리를 위해 Axios Interceptor를 이용한 Jwt관리',
     contentDetails: [],
   },
   {
@@ -68,8 +71,6 @@ export const workDetails = [
   },
   {
     content: '사내 Wegnal 서비스 관리를 위한 관리자 페이지 개발',
-    contentDetails: [
-      '회원 정보 조회•수정•삭제, 배출 신청된 내역 조회•수정•삭제, 회원 및 배출신청 내역 통계 차트 구현 등등',
-    ],
+    contentDetails: [],
   },
 ];

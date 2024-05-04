@@ -9,6 +9,10 @@ export const skills = ['Vue.js', 'Typescript', 'Scss', 'Vuex', 'Vuetify', 'Git',
 export const roles = ['프론트엔드 개발'];
 export const workDetails = [
   {
+    content: '서비스 신규 개발',
+    contentDetails: [],
+  },
+  {
     content: '초기 로딩속도 향상을 위한 최적화 작업 수행',
     contentDetails: [
       'Bundle 최적화(802.28KB → 733.58KB)',
@@ -25,7 +29,10 @@ export const workDetails = [
       '객체 안의 필드값에 대한 IDE의 리스트 업 기능',
     ],
   },
-  { content: '사용자별 인가 처리를 위해 Axios Interceptor를 이용한 Jwt관리', contentDetails: [] },
+  {
+    content: '사용자별 인증 및 인가 처리를 위해 Axios Interceptor를 이용한 Jwt관리',
+    contentDetails: [],
+  },
   {
     content: '회원 관련 기능 구현',
     contentDetails: ['로그인, 회원가입, 비밀번호 찾기, 마이페이지 정보 관리'],
@@ -44,8 +51,6 @@ export const workDetails = [
   },
   {
     content: '사내 Waste Community 서비스 관리를 위한 관리자 페이지 개발',
-    contentDetails: [
-      '회원 정보 조회•수정•삭제, 게시글 조회•수정•삭제, 회원 및 게시글 내역 통계 차트 구현 등등',
-    ],
+    contentDetails: [],
   },
 ];
