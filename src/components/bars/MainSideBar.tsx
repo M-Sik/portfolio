@@ -8,7 +8,7 @@ const links = [
   { targetUrl: 'https://sikk.tistory.com/', label: 'Tistory link', name: 'Tistory' },
   { targetUrl: 'https://siklog.shop/', label: 'siklog link', name: 'Siklog' },
 ];
-const infos = ['rlaaudtlr233@gmail.com', 'Last Update: 2024/04/14'];
+const infos = ['rlaaudtlr233@gmail.com', 'Last Update: 2024/05/05'];
 
 export default function MainSideBar() {
   return (

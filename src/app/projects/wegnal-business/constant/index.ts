@@ -10,6 +10,10 @@ export const skills = [
 export const roles = ['프론트엔드 개발'];
 export const workDetails = [
   {
+    content: '서비스 신규 개발',
+    contentDetails: [],
+  },
+  {
     content: '토스페이먼츠 결제 시스템을 연동하여 결제기능구현',
     contentDetails: ['결제위젯, 브랜드페이 등을 통한 결제'],
   },
@@ -40,8 +44,6 @@ export const workDetails = [
   },
   {
     content: '서비스 관리를 위한 관리자 페이지 개발',
-    contentDetails: [
-      '회원 정보, 거래 정보, 결제 내역, 정산 내역 등등에 관한 데이터를 조회 및 조작 가능하도록 기능 구현 ',
-    ],
+    contentDetails: [],
   },
 ];
