@@ -23,7 +23,7 @@ export const workDetails = [
     contentDetails: [],
   },
   {
-    content: '사용자별 인가 처리를 위해 Axios Interceptor를 이용한 Jwt관리',
+    content: '사용자별 인증 및 인가 처리를 위해 Axios Interceptor를 이용한 Jwt관리',
     contentDetails: [],
   },
   {
