@@ -2,7 +2,7 @@ import React from 'react';
 
 type Props = {
   title: string;
-  workDetails: { content: string; contentDetails: string[] }[];
+  workDetails: { content: any; contentDetails: string[] }[];
 };
 
 const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
@@ -17,7 +17,7 @@ export default function ProjectWorkDetailArticle({ title, workDetails }: Props) 
         {workDetails.map(({ content, contentDetails }, i) => (
           <li key={i} className={listStyle}>
             <ul>
-              <li>{content}</li>
+              <li>{content.text}</li>
               {contentDetails.length !== 0 &&
                 contentDetails.map((detail, i) => (
                   <li key={i} className={listIndentStyle}>
