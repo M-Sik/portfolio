@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 type Props = {
@@ -17,7 +18,19 @@ export default function ProjectWorkDetailArticle({ title, workDetails }: Props) 
         {workDetails.map(({ content, contentDetails }, i) => (
           <li key={i} className={listStyle}>
             <ul>
-              <li>{content.text}</li>
+              {content.type === 'text' ? (
+                <li>{content.text}</li>
+              ) : (
+                <li>
+                  <Link
+                    href={content.href}
+                    target="_blank"
+                    className="underline hover:text-yellow-400"
+                  >
+                    {content.text}
+                  </Link>
+                </li>
+              )}
               {contentDetails.length !== 0 &&
                 contentDetails.map((detail, i) => (
                   <li key={i} className={listIndentStyle}>

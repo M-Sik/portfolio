@@ -12,7 +12,7 @@ export const skills = [
 export const roles = ['프론트엔드 개발'];
 export const workDetails = [
   {
-    content: { type: 'text', text: '서비스 프론트엔드 파트 신규 개발' },
+    content: { type: 'text', href: '', text: '서비스 프론트엔드 파트 신규 개발' },
     contentDetails: [],
   },
   {
