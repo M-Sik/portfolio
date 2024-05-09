@@ -11,8 +11,13 @@ export const skills = ['Next.js 13', 'Typescript', 'Scss', 'Tailwindcss', 'Git',
 export const roles = ['프론트엔드 개발'];
 export const workDetails = [
   {
-    content: { type: 'text', href: '', text: 'SEO 최적화' },
-    contentDetails: ['Robots.txt, Sitemap, Metadata, Semantic Tag'],
+    content: { type: 'text', href: '', text: '검색엔진 최적화를 위한 작업 수행' },
+    contentDetails: [
+      'Robots.txt 파일 작성',
+      '페이지별 Route 경로에 따른 정적 Sitemap 작성',
+      '페이지별 Meta 태그 작성',
+      'Semantic 태그 작성',
+    ],
   },
   {
     content: {
