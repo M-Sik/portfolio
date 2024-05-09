@@ -5,17 +5,23 @@ import ProjectServiceLinkListArticle from '@/components/articles/project/Project
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
-import { links, skills, roles, workDetails } from './constant/index';
+import {
+  links,
+  skills,
+  roles,
+  workDetails,
+  projectName,
+  introduction,
+  troubleShootings,
+} from './constant/index';
 import ScrollTopSection from '@/components/sections/ScrollTopSection';
+import ProjectTroubleShootingArticle from '@/components/articles/project/ProjectTroubleShootingArticle';
 
 export default function WithweHomePage() {
   return (
     <ScrollTopSection>
       <FadeIn delay={0.3}>
-        <ProjectIntroductArticle
-          content="회사를 대표하는 홈페이지이며 Next.js를 활용하여 개발하였습니다."
-          projectName="Withwe 회사 홈페이지"
-        />
+        <ProjectIntroductArticle content={introduction} projectName={projectName} />
       </FadeIn>
       <FadeIn delay={0.9}>
         <ProjectServiceLinkListArticle links={links} />
@@ -28,6 +34,9 @@ export default function WithweHomePage() {
       </FadeIn>
       <FadeIn delay={1.8}>
         <ProjectWorkDetailArticle title="💻 담당 업무" workDetails={workDetails} />
+      </FadeIn>
+      <FadeIn delay={2.1}>
+        <ProjectTroubleShootingArticle troubleShootings={troubleShootings} />
       </FadeIn>
       <FadeIn delay={2.1}>
         <ProjectNumberOfPeopleArticle content="프론트엔드 1명" />
