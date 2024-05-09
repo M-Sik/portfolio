@@ -18,33 +18,28 @@ export const links = [
     text: '👉 깃허브 보러가기 👈',
   },
 ];
-export const skills = [
-  'Next.js 13',
-  'React.js 18',
-  'Typescript',
-  'Swr',
-  'Tailwindcss',
-  'Git',
-  'Github',
-];
+export const skills = ['Next.js 13', 'Typescript', 'Swr', 'Tailwindcss', 'Git', 'Github'];
 export const workDetails = [
   {
-    content: 'Lighthouse를 이용한 웹 성능 및 웹 접근성 검사',
+    content: { type: 'text', href: '', text: 'Lighthouse를 이용한 웹 성능 및 웹 접근성 검사' },
     contentDetails: [],
   },
-  { content: 'Sanity를 이용한 서버 데이터 관리', contentDetails: [] },
   {
-    content: '회원 관련 기능 구현',
+    content: { type: 'text', href: '', text: 'Sanity를 이용한 서버 데이터 관리' },
+    contentDetails: [],
+  },
+  {
+    content: { type: 'text', href: '', text: '회원 관련 기능 구현' },
     contentDetails: [
       'OAuth 로그인(구글, 카카오), Next Meddleware를 이용한 User Session에 따른 처리, 마이페이지',
     ],
   },
   {
-    content: '게시글 관련 기능 구현',
+    content: { type: 'text', href: '', text: '게시글 관련 기능 구현' },
     contentDetails: ['게시글 작성•조회, 좋아요, 북마크, 댓글 작성'],
   },
   {
-    content: '기타 기능 구현',
+    content: { type: 'text', href: '', text: '기타 기능 구현' },
     contentDetails: [
       'File Drag and Drop, Swr을 이용한 데이터 동기화, 유저 팔로우•언팔로우, 사용자 검색',
     ],
