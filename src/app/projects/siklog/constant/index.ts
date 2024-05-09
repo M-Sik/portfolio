@@ -153,17 +153,17 @@ export const troubleShootings = [
     ],
   },
   {
-    title: '스크롤 이벤트를 이용한 무한스크롤 구현 시 리플로우 발생 이슈',
+    title: '스크롤 이벤트와 Throttle을 이용한 무한스크롤 기능 개선',
     contents: [
       {
         subTitle: '[문제 배경]',
         content:
-          '게시글 검색 페이지에 스크롤 이벤트와 Throttle 개념을 적용해 무한스크롤 기능을 구현하였습니다. Throttle을 적용하여 잦은 Reflow는 방지하였으나 Reflow가 발생하지 않게 할 수 없는지에 대해 고민을 하였습니다.',
+          '게시글 검색 페이지에 스크롤 이벤트와 Throttle 개념을 적용해 무한스크롤 기능을 구현하였습니다. Throttle을 적용하여 잦은 이벤트 콜백 함수가 호출되는 것은 개선하였으나, 개선된 호출 횟수에서 더 줄일 수 없는지에 대해 고민하였습니다.',
       },
       {
         subTitle: '[해결 방법]',
         content:
-          'Intersection Observer API를 활용하여 문제를 해결하였습니다. Intersection Observer의 경우 스크롤 이벤트와는 다르게 잦은 이벤트가 발생하지 않으며, Reflow도 발생하지 않는다는 이점이 있어 Intersection Observer를 사용하였습니다.',
+          'Intersection Observer API를 활용하여 문제를 해결하였습니다. Intersection Observer의 경우 스크롤 이벤트와는 다르게 잦은 이벤트가 발생하지 않고 지정한 타겟이 뷰포트와 교차할 때만 이벤트가 발생하며, scrollTop와 getBoundingClientRect 등의 값도 참조하지 않아 Reflow 발생할 가능성이 없다는 이점이 있어 Intersection Observer를 사용하였습니다.',
       },
     ],
   },

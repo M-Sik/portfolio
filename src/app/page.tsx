@@ -6,6 +6,7 @@ import CareerSection from '@/components/sections/careers/CareerSection';
 import MainSection from '@/components/sections/main/MainSection';
 import ProjectSecton from '@/components/sections/personal-projects/ProjectSection';
 import SkillSection from '@/components/sections/skills/SkillSection';
+import TroubleShootingSection from '@/components/sections/trouble-shooting/TroubleShootingSection';
 import { useThrottle } from '@/hooks/useThrottle';
 import { useEffect, useState } from 'react';
 
@@ -17,6 +18,9 @@ export default function Home() {
     let scrollH = document.documentElement.scrollTop;
 
     const skillTop = document.getElementById('skillSection')?.getBoundingClientRect().top;
+    const troubleTop = document
+      .getElementById('troubleShootingSection')
+      ?.getBoundingClientRect().top;
     const careerTop = document.getElementById('careerSection')?.getBoundingClientRect().top;
     const projectTop = document.getElementById('projectSection')?.getBoundingClientRect().top;
 
@@ -38,7 +42,7 @@ export default function Home() {
     } else if (skillTop < 300) {
       return setHighlight('skill');
     }
-  }, 50);
+  }, 300);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -49,6 +53,7 @@ export default function Home() {
       <MainSection id="mainSection" />
       <div className=" relative">
         <SkillSection id="skillSection" />
+        <TroubleShootingSection id="troubleShootingSection" />
         <CareerSection id="careerSection" />
         <ProjectSecton id="projectSection" />
         <SideNavBar highlight={highlight} />
