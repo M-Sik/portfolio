@@ -2,11 +2,9 @@ import FadeIn from '@/components/gasp/FadeIn';
 import Underline from '@/components/gasp/UnderLine';
 import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
 import ProjectRoleArticle from '@/components/articles/project/ProjectRoleArticle';
-import ProjectServiceLinkList from '@/components/articles/project/ProjectServiceLinkArticle';
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import {
-  links,
   roles,
   skills,
   workDetails,
@@ -24,22 +22,19 @@ export default function WegnalPage() {
       <FadeIn delay={0.3}>
         <ProjectIntroductArticle content={introduction} projectName={projectName} />
       </FadeIn>
-      <FadeIn delay={0.9}>
-        <ProjectServiceLinkList links={links} />
-      </FadeIn>
-      <FadeIn delay={1.2}>
+      <FadeIn delay={0.6}>
         <ProjectUseSkillArticle skills={skills} />
       </FadeIn>
-      <FadeIn delay={1.5}>
+      <FadeIn delay={0.9}>
         <ProjectRoleArticle roles={roles} />
       </FadeIn>
-      <FadeIn delay={1.8}>
+      <FadeIn delay={1.2}>
         <ProjectWorkDetailArticle title="💻 담당 업무" workDetails={workDetails} />
       </FadeIn>
-      <FadeIn delay={2.1}>
+      <FadeIn delay={1.5}>
         <ProjectTroubleShootingArticle troubleShootings={troubleShootings} />
       </FadeIn>
-      <FadeIn delay={2.1}>
+      <FadeIn delay={1.8}>
         <ProjectNumberOfPeopleArticle content="프론트엔드 1명, 백엔드 1명" />
       </FadeIn>
     </ScrollTopSection>

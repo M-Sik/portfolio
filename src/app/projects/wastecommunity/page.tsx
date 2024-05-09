@@ -1,11 +1,9 @@
 import FadeIn from '@/components/gasp/FadeIn';
-import Underline from '@/components/gasp/UnderLine';
 import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectNumberOfPeopleArticle';
 import ProjectRoleArticle from '@/components/articles/project/ProjectRoleArticle';
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import {
-  links,
   roles,
   skills,
   workDetails,

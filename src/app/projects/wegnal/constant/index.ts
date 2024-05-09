@@ -1,18 +1,6 @@
 export const projectName = 'Wegnal';
 export const introduction =
   'Wegnal은 폐기물 처리를 위해 폐기물 배출자와 수거∙처리업체를 매칭시켜주는 서비스입니다. 배출자가 폐기물 배출 신청 시 정해진 반경 내의 수거∙처리업체에게 수거를 요청합니다. WebView를 이용하여 Aos, Ios앱을 배포하였습니다.';
-export const links = [
-  {
-    url: 'https://play.google.com/store/apps/details?id=aos.gonsoftware.wegnal',
-    label: 'wegnal googleplay link',
-    text: '👉 구글플레이 앱 보러가기 👈',
-  },
-  {
-    url: 'https://apps.apple.com/us/app/웨그널/id6446239095',
-    label: 'wegnal appstore link',
-    text: '👉 앱스토어 앱 보러가기 👈',
-  },
-];
 export const skills = ['Vue.js', 'Typescript', 'Scss', 'Vuex', 'Vuetify', 'Git', 'Github'];
 export const roles = ['프론트엔드 개발'];
 export const workDetails = [

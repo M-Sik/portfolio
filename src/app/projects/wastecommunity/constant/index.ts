@@ -1,13 +1,6 @@
 export const projectName = 'Waste Community';
 export const introduction =
   'Waste Community는 폐기물에 관련된 정보를 공유할 수 있는 커뮤니티 플랫폼입니다. 누구나 유익한 게시글을 보거나 작성할 수 있으며, 쪽지 기능을 이용하여 사용자 간 개인적으로 정보를 공유할 수도 있습니다.';
-export const links = [
-  {
-    url: 'https://wastecommunity.com',
-    label: 'wastecommunity web link',
-    text: '👉 웹 보러가기 👈',
-  },
-];
 export const skills = ['Vue.js', 'Typescript', 'Scss', 'Vuex', 'Vuetify', 'Git', 'Github'];
 export const roles = ['프론트엔드 개발'];
 export const workDetails = [
