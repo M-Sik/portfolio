@@ -28,16 +28,16 @@ export default function SiklogPage() {
           projectName={projectName}
         />
       </FadeIn>
-      <FadeIn delay={0.9}>
+      <FadeIn delay={0.6}>
         <ProjectServiceLinkList links={links} />
       </FadeIn>
-      <FadeIn delay={1.2}>
+      <FadeIn delay={0.9}>
         <ProjectUseSkillArticle skills={skills} />
       </FadeIn>
-      <FadeIn delay={1.5}>
+      <FadeIn delay={1.2}>
         <ProjectWorkDetailArticle title="💻 작업 내용" workDetails={workDetails} />
       </FadeIn>
-      <FadeIn delay={2.1}>
+      <FadeIn delay={1.5}>
         <ProjectTroubleShootingArticle troubleShootings={troubleShootings} />
       </FadeIn>
       <FadeIn delay={1.8}>
