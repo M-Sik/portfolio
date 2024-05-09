@@ -5,23 +5,24 @@ import ProjectRoleArticle from '@/components/articles/project/ProjectRoleArticle
 import ProjectServiceLinkList from '@/components/articles/project/ProjectServiceLinkArticle';
 import ProjectUseSkillArticle from '@/components/articles/project/ProjectUseSkillArticle';
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
-import { links, roles, skills, workDetails } from './constant/index';
+import {
+  links,
+  roles,
+  skills,
+  workDetails,
+  introduction,
+  projectName,
+  troubleShootings,
+} from './constant/index';
 import ScrollTopSection from '@/components/sections/ScrollTopSection';
+import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
+import ProjectTroubleShootingArticle from '@/components/articles/project/ProjectTroubleShootingArticle';
 
 export default function WegnalPage() {
   return (
     <ScrollTopSection>
       <FadeIn delay={0.3}>
-        <Underline delay={0.5} duration={2} color="rgb(248, 205, 7)" className="w-full block">
-          <h1 className=" text-4xl font-bold">Wegnal</h1>
-        </Underline>
-      </FadeIn>
-      <FadeIn delay={0.6}>
-        <p className="mt-4">
-          Wegnal은 폐기물 처리를 위해 폐기물 배출자와 수거∙처리업체를 매칭시켜주는 서비스입니다.
-          배출자가 폐기물 배출 신청 시 정해진 반경 내의 수거∙처리업체에게 수거를 요청합니다.
-          WebView를 이용하여 Aos, Ios앱을 배포하였습니다.
-        </p>
+        <ProjectIntroductArticle content={introduction} projectName={projectName} />
       </FadeIn>
       <FadeIn delay={0.9}>
         <ProjectServiceLinkList links={links} />
@@ -34,6 +35,9 @@ export default function WegnalPage() {
       </FadeIn>
       <FadeIn delay={1.8}>
         <ProjectWorkDetailArticle title="💻 담당 업무" workDetails={workDetails} />
+      </FadeIn>
+      <FadeIn delay={2.1}>
+        <ProjectTroubleShootingArticle troubleShootings={troubleShootings} />
       </FadeIn>
       <FadeIn delay={2.1}>
         <ProjectNumberOfPeopleArticle content="프론트엔드 1명, 백엔드 1명" />

@@ -7,19 +7,7 @@ export const links = [
     text: '👉 웹 보러가기 👈',
   },
 ];
-export const skills = [
-  'Next.js 13',
-  'React.js',
-  'Typescript',
-  'Scss',
-  'Tailwindcss',
-  'Aws',
-  'Ec2',
-  'Pm2',
-  'Nginx',
-  'Git',
-  'Github',
-];
+export const skills = ['Next.js 13', 'Typescript', 'Scss', 'Tailwindcss', 'Git', 'Github'];
 export const roles = ['프론트엔드 개발'];
 export const workDetails = [
   {
