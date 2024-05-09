@@ -6,6 +6,9 @@ import FollowUnfollowGif from '../../../../../public/images/projects/sikstagram/
 import FollowUserInfoGif from '../../../../../public/images/projects/sikstagram/sikstagram_followuser_info.gif';
 import MyPostedBookmarkLikeGif from '../../../../../public/images/projects/sikstagram/sikstagram_mypost_bookmarked_liked.gif';
 
+export const projectName = 'Sikstagram';
+export const introduction =
+  'Next.js에 대하여 공부하기 위해 진행한 프로젝트 입니다. 13버전의 app dir를 이용하여 프로젝트를 진행 하였습니다. 프로젝트를 진행하며 Next.js의 장점인 pre-rendering을 경험할 수 있었으며, 13버전에서 새로나온 개념인 서버 컴포넌트, 클라이언트 컴포넌트에 대해 깊게 공부할 수 있었습니다.';
 export const links = [
   {
     url: 'https://sikstagram.vercel.app',

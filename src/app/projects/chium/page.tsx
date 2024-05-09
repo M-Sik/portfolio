@@ -15,6 +15,11 @@ import ScrollTopSection from '@/components/sections/ScrollTopSection';
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
 import ProjectTroubleShootingArticle from '@/components/articles/project/ProjectTroubleShootingArticle';
 
+export const metadata = {
+  title: projectName,
+  description: introduction,
+};
+
 export default function ChiumPage() {
   return (
     <ScrollTopSection>

@@ -17,6 +17,11 @@ import {
 import ScrollTopSection from '@/components/sections/ScrollTopSection';
 import ProjectTroubleShootingArticle from '@/components/articles/project/ProjectTroubleShootingArticle';
 
+export const metadata = {
+  title: projectName,
+  description: introduction,
+};
+
 export default function WithweHomePage() {
   return (
     <ScrollTopSection>

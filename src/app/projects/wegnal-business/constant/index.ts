@@ -1,4 +1,4 @@
-export const projectName = 'Wegnal-Business';
+export const projectName = 'Wegnal Business';
 export const introduction =
   'Wegnal Business는 선결제 시스템을 도입하여 폐기물 수거비용 지급 문제로 인한 혼란을 최소화하고, 거래의 안정성을 높여 폐기물 수거∙처리업체에게 도움을 주기 위한 서비스입니다.';
 export const skills = [
