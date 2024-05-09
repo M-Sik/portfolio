@@ -9,6 +9,11 @@ import { links, previews, skills, workDetails, projectName, introduction } from 
 import ScrollTopSection from '@/components/sections/ScrollTopSection';
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
 
+export const metadata = {
+  title: projectName,
+  description: introduction,
+};
+
 export default function PortFolioPage() {
   return (
     <ScrollTopSection>
