@@ -9,7 +9,7 @@ export default function SideNavBar({ highlight }: Props) {
   const navItems: { name: string; value: NavItem }[] = [
     { name: '🛠️ 기술 스택', value: 'skill' },
     { name: '💼 경력', value: 'career' },
-    { name: '💻 개인 프로젝트', value: 'project' },
+    { name: '💻 사이드 프로젝트', value: 'project' },
   ];
   const handleClick = (value: NavItem) => {
     if (value === 'skill')
