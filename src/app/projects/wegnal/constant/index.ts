@@ -14,7 +14,11 @@ export const workDetails = [
       href: 'https://sikk.tistory.com/117',
       text: '초기 로딩속도가 느려 좋지 않은 사용자 경험을 개선 하기 위해 최적화 작업 수행',
     },
-    contentDetails: ['Bundle 최적화(1.51MB ⇒ 1.44MB)', 'Code Splitting'],
+    contentDetails: [
+      '크롬 개발자 도구 기준 초기 로딩 속도 평균 50% 향상',
+      'Bundle 최적화(1.51MB ⇒ 1.44MB)',
+      'Code Splitting',
+    ],
   },
   {
     content: {
