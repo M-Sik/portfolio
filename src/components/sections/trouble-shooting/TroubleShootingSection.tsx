@@ -1,29 +1,8 @@
 import React from 'react';
 import Underline from '../../gasp/UnderLine';
 import BottomToTopFadeIn from '@/components/gasp/BottomToTopFadeIn';
-
-const skills = [
-  {
-    title: 'Language',
-    contents: ['Javascript', 'Typescript'],
-  },
-  {
-    title: 'Framework / Library',
-    contents: ['Next.js', 'React.js', 'Vue.js'],
-  },
-  {
-    title: 'MarkUp',
-    contents: ['Html', 'Css', 'Scss', 'Tailwindcss'],
-  },
-  {
-    title: 'Tool',
-    contents: ['Git', 'Github', 'Figma'],
-  },
-  {
-    title: 'Used at least once',
-    contents: ['Aws', 'Mongodb'],
-  },
-];
+import Link from 'next/link';
+import { troubleShootings } from './constants';
 
 type Props = {
   id: string;
@@ -46,25 +25,19 @@ export default function TroubleShootingSection({ id }: Props) {
           </BottomToTopFadeIn>
         </dt>
         <dd className="mt-6">
-          <ul>
-            {skills.map(({ title, contents }) => (
-              <li key={title}>
-                <BottomToTopFadeIn delay={0}>
-                  <dl className="flex gap-8 mobile:block pb-3 items-center">
-                    <dt className=" w-[200px] text-gray-600">{title}</dt>
-                    <dd className="flex gap-3">
-                      {contents.map((content) => (
-                        <p
-                          key={content}
-                          className="py-1 px-2 bg-gray-200 rounded-md text-purple-600 font-bold"
-                        >
-                          {content}
-                        </p>
-                      ))}
-                    </dd>
-                  </dl>
-                </BottomToTopFadeIn>
-              </li>
+          <ul className="flex flex-col gap-4">
+            {troubleShootings.map(({ title, href, label }) => (
+              <BottomToTopFadeIn delay={0} key={title}>
+                <li>
+                  <Link
+                    href={href}
+                    aria-label={label}
+                    className="text-gray-600 hover:text-yellow-400 underline text-lg"
+                  >
+                    {title}
+                  </Link>
+                </li>
+              </BottomToTopFadeIn>
             ))}
           </ul>
         </dd>

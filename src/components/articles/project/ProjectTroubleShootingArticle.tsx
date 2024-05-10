@@ -4,13 +4,13 @@ type Props = {
   troubleShootings: { title: string; contents: { subTitle: string; content: string }[] }[];
 };
 
-const subTitleStyle = 'mt-16 mobile:mt-8 text-2xl font-bold';
+const subTitleStyle = 'text-2xl font-bold';
 const listStyle = 'mt-4 list-disc pl-6 flex flex-col gap-4';
 const listIndentStyle = 'mt-1';
 
 export default function ProjectTroubleShootingArticle({ troubleShootings }: Props) {
   return (
-    <article id="troubleShootingStep">
+    <article id="troubleShootingStep" className="pt-16 mobile:pt-8">
       <h2 className={subTitleStyle}>🧨 트러블 슈팅</h2>
       <ul className={listStyle}>
         {troubleShootings.map(({ title, contents }, i) => (

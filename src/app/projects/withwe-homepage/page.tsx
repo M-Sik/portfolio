@@ -14,7 +14,7 @@ import {
   introduction,
   troubleShootings,
 } from './constant/index';
-import ScrollTopSection from '@/components/sections/ScrollTopSection';
+import ScrollControlSection from '@/components/sections/ScrollControlSection';
 import ProjectTroubleShootingArticle from '@/components/articles/project/ProjectTroubleShootingArticle';
 
 export const metadata = {
@@ -24,28 +24,28 @@ export const metadata = {
 
 export default function WithweHomePage() {
   return (
-    <ScrollTopSection>
+    <ScrollControlSection>
       <FadeIn delay={0.3}>
         <ProjectIntroductArticle content={introduction} projectName={projectName} />
       </FadeIn>
-      <FadeIn delay={0.9}>
+      <FadeIn delay={0.3}>
         <ProjectServiceLinkListArticle links={links} />
       </FadeIn>
-      <FadeIn delay={1.2}>
+      <FadeIn delay={0.3}>
         <ProjectUseSkillArticle skills={skills} />
       </FadeIn>
-      <FadeIn delay={1.5}>
+      <FadeIn delay={0.3}>
         <ProjectRoleArticle roles={roles} />
       </FadeIn>
-      <FadeIn delay={1.8}>
+      <FadeIn delay={0.3}>
         <ProjectWorkDetailArticle title="💻 담당 업무" workDetails={workDetails} />
       </FadeIn>
-      <FadeIn delay={2.1}>
+      <FadeIn delay={0.3}>
         <ProjectTroubleShootingArticle troubleShootings={troubleShootings} />
       </FadeIn>
-      <FadeIn delay={2.1}>
+      <FadeIn delay={0.3}>
         <ProjectNumberOfPeopleArticle content="프론트엔드 1명" />
       </FadeIn>
-    </ScrollTopSection>
+    </ScrollControlSection>
   );
 }

@@ -11,7 +11,7 @@ import {
   troubleShootings,
   workDetails,
 } from './constant/index';
-import ScrollTopSection from '@/components/sections/ScrollTopSection';
+import ScrollControlSection from '@/components/sections/ScrollControlSection';
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
 import ProjectTroubleShootingArticle from '@/components/articles/project/ProjectTroubleShootingArticle';
 
@@ -22,25 +22,25 @@ export const metadata = {
 
 export default function ChiumPage() {
   return (
-    <ScrollTopSection>
+    <ScrollControlSection>
       <FadeIn delay={0.3}>
         <ProjectIntroductArticle content={introduction} projectName={projectName} />
       </FadeIn>
-      <FadeIn delay={0.6}>
+      <FadeIn delay={0.3}>
         <ProjectUseSkillArticle skills={skills} />
       </FadeIn>
-      <FadeIn delay={0.9}>
+      <FadeIn delay={0.3}>
         <ProjectRoleArticle roles={roles} />
       </FadeIn>
-      <FadeIn delay={1.2}>
+      <FadeIn delay={0.3}>
         <ProjectWorkDetailArticle title="💻 담당 업무" workDetails={workDetails} />
       </FadeIn>
-      <FadeIn delay={1.5}>
+      <FadeIn delay={0.3}>
         <ProjectTroubleShootingArticle troubleShootings={troubleShootings} />
       </FadeIn>
-      <FadeIn delay={1.8}>
+      <FadeIn delay={0.3}>
         <ProjectNumberOfPeopleArticle content="Front-End 2명, Back-End 2명 (참여율 Front-End 기준 70%)" />
       </FadeIn>
-    </ScrollTopSection>
+    </ScrollControlSection>
   );
 }

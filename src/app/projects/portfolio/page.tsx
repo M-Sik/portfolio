@@ -6,7 +6,7 @@ import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectN
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import ProjectPreviewArticle from '@/components/articles/project/ProjectPreviewArticle';
 import { links, previews, skills, workDetails, projectName, introduction } from './constant/index';
-import ScrollTopSection from '@/components/sections/ScrollTopSection';
+import ScrollControlSection from '@/components/sections/ScrollControlSection';
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
 
 export const metadata = {
@@ -16,25 +16,25 @@ export const metadata = {
 
 export default function PortFolioPage() {
   return (
-    <ScrollTopSection>
+    <ScrollControlSection>
       <FadeIn delay={0.3}>
         <ProjectIntroductArticle content={introduction} projectName={projectName} />
       </FadeIn>
-      <FadeIn delay={0.6}>
+      <FadeIn delay={0.3}>
         <ProjectServiceLinkList links={links} />
       </FadeIn>
-      <FadeIn delay={0.9}>
+      <FadeIn delay={0.3}>
         <ProjectUseSkillArticle skills={skills} />
       </FadeIn>
-      <FadeIn delay={1.2}>
+      <FadeIn delay={0.3}>
         <ProjectWorkDetailArticle title="💻 작업 내용" workDetails={workDetails} />
       </FadeIn>
-      <FadeIn delay={1.5}>
+      <FadeIn delay={0.3}>
         <ProjectNumberOfPeopleArticle content="개인 프로젝트" />
       </FadeIn>
       <BottomToTopFadeIn delay={0}>
         <ProjectPreviewArticle title="📺 미리 보기" previews={previews} />
       </BottomToTopFadeIn>
-    </ScrollTopSection>
+    </ScrollControlSection>
   );
 }

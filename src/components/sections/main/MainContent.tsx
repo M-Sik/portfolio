@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import bgImg from '../../../../public/images/main/portfolio_main_bg.jpeg';
 import Image from 'next/image';

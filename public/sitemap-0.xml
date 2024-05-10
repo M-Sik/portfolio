@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://devsik-portfolio.vercel.app/apple-icon.png</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://devsik-portfolio.vercel.app/icon.png</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://devsik-portfolio.vercel.app/favicon.ico</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://devsik-portfolio.vercel.app</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://devsik-portfolio.vercel.app/projects/chium</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://devsik-portfolio.vercel.app/projects/portfolio</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://devsik-portfolio.vercel.app/projects/siklog</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://devsik-portfolio.vercel.app/projects/wastecommunity</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://devsik-portfolio.vercel.app/projects/sikstagram</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://devsik-portfolio.vercel.app/projects/wegnal</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
-<url><loc>https://devsik-portfolio.vercel.app/projects/withwe-homepage</loc><lastmod>2024-04-12T07:54:15.024Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/icon.png</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/projects/portfolio</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/projects/chium</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/favicon.ico</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/projects/siklog</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/apple-icon.png</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/projects/sikstagram</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/projects/wastecommunity</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/projects/wegnal</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/projects/withwe-homepage</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://devsik-portfolio.vercel.app/projects/wegnal-business</loc><lastmod>2024-05-10T03:36:05.955Z</lastmod><changefreq>daily</changefreq><priority>1</priority></url>
 </urlset>
