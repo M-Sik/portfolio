@@ -67,6 +67,17 @@ export const workDetails = [
   },
   {
     content: {
+      type: 'text',
+      href: '',
+      text: '블로그 메인 및 게시글 상세 페이지 SSR 방식에서 SSG 로 변경하여 렌더링 속도 개선',
+    },
+    contentDetails: [
+      '메인페이지 SSR(3180ms) → SSG(340ms) 약 90% 속도 향상',
+      '게시글 상세페이지 SSR(3680ms) → SSG(800ms) 약 80% 속도 향상',
+    ],
+  },
+  {
+    content: {
       type: 'link',
       href: 'https://sikk.tistory.com/281',
       text: 'Suspense, ErrorBoundary를 통한 API 로딩 처리 및 에러핸들링',
