@@ -11,9 +11,10 @@ import {
   introduction,
   troubleShootings,
 } from './constant/index';
-import ScrollControlSection from '@/components/sections/ScrollControlSection';
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
 import ProjectTroubleShootingArticle from '@/components/articles/project/ProjectTroubleShootingArticle';
+import { Suspense } from 'react';
+import MoveScroll from '@/components/etc/MoveScroll';
 
 export const metadata = {
   title: projectName,
@@ -22,7 +23,7 @@ export const metadata = {
 
 export default function WastecommunityPage() {
   return (
-    <ScrollControlSection>
+    <section>
       <FadeIn delay={0.3}>
         <ProjectIntroductArticle content={introduction} projectName={projectName} />
       </FadeIn>
@@ -41,6 +42,9 @@ export default function WastecommunityPage() {
       <FadeIn delay={0.3}>
         <ProjectNumberOfPeopleArticle content="프론트엔드 1명, 백엔드 1명" />
       </FadeIn>
-    </ScrollControlSection>
+      <Suspense>
+        <MoveScroll />
+      </Suspense>
+    </section>
   );
 }

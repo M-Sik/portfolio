@@ -12,8 +12,9 @@ import {
   workDetails,
   troubleShootings,
 } from './constant/index';
-import ScrollControlSection from '@/components/sections/ScrollControlSection';
 import ProjectTroubleShootingArticle from '@/components/articles/project/ProjectTroubleShootingArticle';
+import { Suspense } from 'react';
+import MoveScroll from '@/components/etc/MoveScroll';
 
 export const metadata = {
   title: projectName,
@@ -22,7 +23,7 @@ export const metadata = {
 
 export default function WegnalPage() {
   return (
-    <ScrollControlSection>
+    <section>
       <FadeIn delay={0.3}>
         <Underline delay={0.5} duration={2} color="rgb(248, 205, 7)" className="w-full block">
           <h1 className=" text-4xl font-bold">{projectName}</h1>
@@ -46,6 +47,9 @@ export default function WegnalPage() {
       <FadeIn delay={0.3}>
         <ProjectNumberOfPeopleArticle content="프론트엔드 1명, 백엔드 1명" />
       </FadeIn>
-    </ScrollControlSection>
+      <Suspense>
+        <MoveScroll />
+      </Suspense>
+    </section>
   );
 }

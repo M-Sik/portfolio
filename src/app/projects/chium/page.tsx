@@ -11,9 +11,10 @@ import {
   troubleShootings,
   workDetails,
 } from './constant/index';
-import ScrollControlSection from '@/components/sections/ScrollControlSection';
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
 import ProjectTroubleShootingArticle from '@/components/articles/project/ProjectTroubleShootingArticle';
+import { Suspense } from 'react';
+import MoveScroll from '@/components/etc/MoveScroll';
 
 export const metadata = {
   title: projectName,
@@ -22,7 +23,7 @@ export const metadata = {
 
 export default function ChiumPage() {
   return (
-    <ScrollControlSection>
+    <section>
       <FadeIn delay={0.3}>
         <ProjectIntroductArticle content={introduction} projectName={projectName} />
       </FadeIn>
@@ -41,6 +42,9 @@ export default function ChiumPage() {
       <FadeIn delay={0.3}>
         <ProjectNumberOfPeopleArticle content="Front-End 2명, Back-End 2명 (참여율 Front-End 기준 70%)" />
       </FadeIn>
-    </ScrollControlSection>
+      <Suspense>
+        <MoveScroll />
+      </Suspense>
+    </section>
   );
 }
