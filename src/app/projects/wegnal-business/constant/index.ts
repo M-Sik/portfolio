@@ -22,9 +22,7 @@ export const workDetails = [
       href: '',
       text: '토스페이먼츠에서 제공하는 결제위젯과 브랜드페이를 연동하여 결제기능구현',
     },
-    contentDetails: [
-      '여러 PG사가 있지만 토스페이먼츠의 개발 문서 가장 보기 좋게 정리되어있어서 토스페이먼츠를 선택',
-    ],
+    contentDetails: [],
   },
   {
     content: {
