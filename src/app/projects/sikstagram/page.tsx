@@ -6,8 +6,9 @@ import ProjectNumberOfPeopleArticle from '@/components/articles/project/ProjectN
 import ProjectWorkDetailArticle from '@/components/articles/project/ProjectWorkDetailArticle';
 import ProjectPreviewArticle from '@/components/articles/project/ProjectPreviewArticle';
 import { links, previews, skills, workDetails, projectName, introduction } from './constant/index';
-import ScrollControlSection from '@/components/sections/ScrollControlSection';
 import ProjectIntroductArticle from '@/components/articles/project/ProjectIntroductArticle';
+import { Suspense } from 'react';
+import MoveScroll from '@/components/etc/MoveScroll';
 
 export const metadata = {
   title: projectName,
@@ -16,7 +17,7 @@ export const metadata = {
 
 export default function SikstagramPage() {
   return (
-    <ScrollControlSection>
+    <section>
       <FadeIn delay={0.3}>
         <ProjectIntroductArticle content={introduction} projectName={projectName} />
       </FadeIn>
@@ -35,6 +36,9 @@ export default function SikstagramPage() {
       <BottomToTopFadeIn delay={0}>
         <ProjectPreviewArticle title="📺 미리 보기" previews={previews} />
       </BottomToTopFadeIn>
-    </ScrollControlSection>
+      <Suspense>
+        <MoveScroll />
+      </Suspense>
+    </section>
   );
 }
