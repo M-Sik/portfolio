@@ -1,5 +1,10 @@
 export const troubleShootings = [
   {
+    title: '[(주)웨딩북] 결혼 준비 플랫폼 weddingbook 프로젝트 트러블 슈팅 보러가기 🧨',
+    href: '/projects/weddingbook?step=troubleShootingStep',
+    label: '결혼 준비 플랫폼 weddingbook 프로젝트 트러블 슈팅 바로가기 링크',
+  },
+  {
     title: '[사이드 프로젝트] 개인 블로그 Siklog 프로젝트 트러블 슈팅 보러가기 🧨',
     href: '/projects/siklog?step=troubleShootingStep',
     label: '개인 블로그 siklog 트러블슈팅 바로가기 링크',

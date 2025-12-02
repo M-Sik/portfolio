@@ -1,7 +1,9 @@
+import { ProjectTroubleShooting } from '@/types/projects';
+import Image from 'next/image';
 import React from 'react';
 
 type Props = {
-  troubleShootings: { title: string; contents: { subTitle: string; content: string }[] }[];
+  troubleShootings: ProjectTroubleShooting[];
 };
 
 const subTitleStyle = 'text-2xl font-bold';
@@ -18,12 +20,13 @@ export default function ProjectTroubleShootingArticle({ troubleShootings }: Prop
             <ul>
               <li className="font-bold">{title}</li>
               {contents.length !== 0 &&
-                contents.map(({ subTitle, content }, i) => (
+                contents.map(({ subTitle, content, image }, i) => (
                   <li key={i} className={listIndentStyle}>
-                    <p>
+                    <p className="whitespace-pre-line">
                       <strong className="mr-2">{subTitle}</strong>
                       {content}
                     </p>
+                    {image && <Image src={image} alt={subTitle} width={500} />}
                   </li>
                 ))}
             </ul>

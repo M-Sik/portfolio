@@ -14,7 +14,7 @@ const careers = [
     year: '(2024.07 ~ 재직중)',
     projects: [
       {
-        name: '웨딩북',
+        name: 'WeddingBook',
         bgImg: WeddingBookBg,
         bgImgAlt: '웨딩북 배경이미지',
         skills: ['Next.js', 'React.js', 'Scss', 'Zustand', 'React Query', 'Git', 'Git Flow'],
