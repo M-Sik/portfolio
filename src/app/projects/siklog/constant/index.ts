@@ -37,7 +37,7 @@ export const introducts = [
 ];
 export const links = [
   {
-    url: 'https://siklog.shop/',
+    url: 'https://siklog.vercel.app/',
     label: 'siklog link',
     text: '👉 웹 보러가기 👈',
   },
