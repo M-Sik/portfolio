@@ -7,3 +7,8 @@ export type Project = {
   skills: string[];
   link: string;
 };
+
+export type ProjectTroubleShooting = {
+  title: string;
+  contents: { subTitle: string; content: string; image?: StaticImageData }[];
+};

@@ -1,3 +1,4 @@
+import { ProjectTroubleShooting } from '@/types/projects';
 import HomeImg from '../../../../../public/images/projects/siklog/siklog_home.png';
 import PostDetailImg from '../../../../../public/images/projects/siklog/siklog_post_detail.png';
 import SearchPostImg from '../../../../../public/images/projects/siklog/siklog_search_post.png';
@@ -142,7 +143,7 @@ export const workDetails = [
   },
 ];
 
-export const troubleShootings = [
+export const troubleShootings: ProjectTroubleShooting[] = [
   {
     title: 'SSR적용 이슈',
     contents: [

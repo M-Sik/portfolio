@@ -1,3 +1,5 @@
+import { ProjectTroubleShooting } from '@/types/projects';
+
 export const projectName = 'Chium';
 export const introduction =
   'Chium은 폐기물 배출자와 수거업체를 연결해 주는 폐기물 안전 처리 서비스입니다. 배출자와 수거업체 간의 입찰 과정을 통하여 폐기물을 처리하며, 배출자는 가장 저렴한 가격에 폐기물을 배출할 수 있습니다. WebView를 이용하여 Aos, Ios앱을 배포하였습니다.';
@@ -99,7 +101,7 @@ export const workDetails = [
   },
 ];
 
-export const troubleShootings = [
+export const troubleShootings: ProjectTroubleShooting[] = [
   {
     title: 'API 요청 및 응답 코드 중복 이슈',
     contents: [
