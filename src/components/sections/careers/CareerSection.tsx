@@ -2,16 +2,29 @@ import BottomToTopFadeIn from '@/components/gasp/BottomToTopFadeIn';
 import Underline from '@/components/gasp/UnderLine';
 import React from 'react';
 import WithweHomepageBg from '../../../../public/images/careers/withwe_bg.png';
-import WegnalLandingBg from '../../../../public/images/careers/wegnal_landing_bg.jpg';
 import WegnalBg from '../../../../public/images/careers/wegnal_bg.jpg';
 import WasteCommunityBg from '../../../../public/images/careers/wastecommunity_bg.png';
 import ChiumBg from '../../../../public/images/careers/chium_bg.png';
 import ProjectCard from '@/components/cards/ProjectCard';
+import WeddingBookBg from '../../../../public/images/careers/weddingbook_bg.webp';
 
 const careers = [
   {
+    comp: '(주) 웨딩북',
+    year: '(2024.07 ~ 재직중)',
+    projects: [
+      {
+        name: '웨딩북',
+        bgImg: WeddingBookBg,
+        bgImgAlt: '웨딩북 배경이미지',
+        skills: ['Next.js', 'React.js', 'Scss', 'Zustand', 'React Query', 'Git', 'Git Flow'],
+        link: '/projects/weddingbook',
+      },
+    ],
+  },
+  {
     comp: '(주) 위드위',
-    year: '(2022.11 ~ 재직중)',
+    year: '(2022.11 ~ 2024.06)',
     projects: [
       {
         name: 'Wegnal Business',
