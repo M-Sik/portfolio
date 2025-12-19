@@ -6,7 +6,7 @@ import LinkText from '../etc/LinkText';
 const links = [
   { targetUrl: 'https://github.com/M-Sik', label: 'github link', name: 'GitHub' },
   { targetUrl: 'https://sikk.tistory.com/', label: 'Tistory link', name: 'Tistory' },
-  { targetUrl: 'https://siklog.shop/', label: 'siklog link', name: 'Siklog' },
+  { targetUrl: 'https://siklog.vercel.app/', label: 'siklog link', name: 'Siklog' },
 ];
 const infos = ['rlaaudtlr233@gmail.com', 'Last Update: 2024/05/05'];
 
