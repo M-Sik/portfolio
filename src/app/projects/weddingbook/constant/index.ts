@@ -2,7 +2,7 @@ import LayerBasedImg from '../../../../../public/images/projects/weddingbook/lay
 import FeatureBasedImg from '../../../../../public/images/projects/weddingbook/feature-based.png';
 
 export const projectName = 'WeddingBook';
-export const introduction = '결혼준비를 쉽게 할 수 있도록 도움을 주기 위한 서비스입니다.';
+export const introduction = '회원 수 80만 명, 월 이용자 10만 명을 보유한 결혼 준비 서비스입니다.';
 export const skills = [
   'Next.js',
   'React.js',
