@@ -11,7 +11,7 @@ import WeddingBookBg from '../../../../public/images/careers/weddingbook_bg.webp
 const careers = [
   {
     comp: '(주) 웨딩북',
-    year: '(2024.07 ~ 재직중)',
+    year: '(2024.07 ~ 2026.01)',
     projects: [
       {
         name: 'WeddingBook',
